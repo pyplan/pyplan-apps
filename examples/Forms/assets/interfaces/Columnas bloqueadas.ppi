@@ -1,0 +1,153 @@
+{
+  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "properties": {
+    "id": "6a1a0ad7-2f34-4183-8a82-124146f061a3",
+    "name": "Columnas bloqueadas",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    }
+  },
+  "definition": [
+    {
+      "component_type": "core.Form",
+      "component_id": "45827693-1360-4192-ae56-d4b6a2ae2fbe",
+      "namespace": "ppc",
+      "node_id": "form_c_cols_bloqueadas",
+      "x": 0,
+      "y": 1,
+      "w": 12,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form con columnas bloqueadas",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          },
+          "item_type": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "Beverages",
+              "Food",
+              "Others"
+            ]
+          },
+          "mes_01": {
+            "readOnly": true,
+            "className": ""
+          },
+          "mes_02": {
+            "readOnly": true,
+            "className": ""
+          },
+          "mes_03": {
+            "readOnly": true,
+            "className": ""
+          },
+          "mes_04": {
+            "readOnly": true,
+            "className": ""
+          },
+          "mes_05": {
+            "readOnly": true,
+            "className": ""
+          },
+          "mes_06": {
+            "readOnly": true,
+            "className": ""
+          },
+          "total": {
+            "readOnly": true,
+            "className": ""
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "drilldowns": [],
+        "style": {}
+      },
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Selector",
+      "component_id": "441f36df-b9f8-4f5b-bdb8-0e36a1b1282a",
+      "namespace": "ppc",
+      "node_id": "ultimo_mes_real",
+      "x": 0,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "\u00daltimo mes real",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "format": "default",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    }
+  ]
+}

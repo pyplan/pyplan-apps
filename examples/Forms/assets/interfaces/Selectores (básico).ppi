@@ -1,0 +1,207 @@
+{
+  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "properties": {
+    "id": "6e49c17b-c0dc-4ef8-b12b-3819afffd8fa",
+    "name": "Selectores (b\u00e1sico)",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    }
+  },
+  "definition": [
+    {
+      "component_type": "core.Form",
+      "component_id": "53e23b8a-c775-42f6-a5a7-f64753085aab",
+      "namespace": "ppc",
+      "node_id": "form_c_selectores",
+      "x": 2,
+      "y": 0,
+      "w": 5,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form con selectores",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          },
+          "item_type": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "Beverages",
+              "Food",
+              "Others"
+            ]
+          },
+          "revenue": {
+            "readOnly": true,
+            "className": ""
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "drilldowns": [],
+        "style": {}
+      },
+      "filters": {
+        "item_type": [],
+        "region": []
+      },
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "e6b9408f-d658-4947-98fc-3f1145fb54e8",
+      "namespace": "ppc",
+      "node_id": "revenue_report",
+      "x": 7,
+      "y": 0,
+      "w": 5,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Revenue report",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "type": "bar",
+        "chart_properties": {
+          "template": "simple_white",
+          "color_discrete_sequence": "Prism"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": "sum",
+          "params": {
+            "x": "item_type",
+            "y": "values",
+            "color": "region"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "available_drilldown_indexes": [],
+        "supported_types_for_drilldown": [
+          "bar",
+          "line",
+          "scatter",
+          "area",
+          "pie",
+          "funnel",
+          "funnel_area",
+          "histogram",
+          "strip"
+        ]
+      },
+      "filters": {
+        "item_type": [],
+        "region": []
+      }
+    },
+    {
+      "component_type": "core.Index",
+      "component_id": "934c6f77-6ff0-4293-ad39-1887ce24f061",
+      "namespace": "ppc",
+      "node_id": "item_type",
+      "x": 0,
+      "y": 0,
+      "w": 2,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Item types",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "single_select": false,
+        "format": "default",
+        "orientation": "vertical"
+      },
+      "selected_values": []
+    }
+  ]
+}

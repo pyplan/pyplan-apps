@@ -1,0 +1,231 @@
+{
+  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "properties": {
+    "id": "d61da4cd-7c71-47df-b23a-366bde8895d5",
+    "name": "Selectores filtrados por usuario",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    }
+  },
+  "definition": [
+    {
+      "component_type": "core.Form",
+      "component_id": "16cbca4e-d724-4381-bb52-e8030f16dd2d",
+      "namespace": "ppc",
+      "node_id": "form_c_selectores_filt_x_usuario",
+      "x": 6,
+      "y": 0,
+      "w": 6,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form con selectores filtrados por usuario",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [
+          "item_type",
+          "region"
+        ],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          },
+          "region": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "Asia",
+              "Africa"
+            ]
+          },
+          "item_type": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "Beverages",
+              "Food",
+              "Others"
+            ]
+          },
+          "revenue": {
+            "readOnly": true,
+            "className": ""
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": true,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "drilldowns": [],
+        "style": {}
+      },
+      "filters": {
+        "item_type": [],
+        "region": []
+      },
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Form",
+      "component_id": "6b7c10a0-984c-4892-a5f1-02ca9ebbe6f4",
+      "namespace": "ppc",
+      "node_id": "form_c_regiones_x_usuario",
+      "x": 0,
+      "y": 1,
+      "w": 6,
+      "h": 7,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form con regiones por usuario",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          },
+          "regions": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "North America",
+              "South America",
+              "Europe",
+              "Asia",
+              "Africa"
+            ]
+          },
+          "users": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "User A",
+              "User B",
+              "User C"
+            ]
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "drilldowns": [],
+        "style": {}
+      },
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Selector",
+      "component_id": "6016046d-70ae-4e40-ad7c-696d8098614e",
+      "namespace": "ppc",
+      "node_id": "quien_soy",
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Qui\u00e9n soy?",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "format": "default",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    }
+  ]
+}

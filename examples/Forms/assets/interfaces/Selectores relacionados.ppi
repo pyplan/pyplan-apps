@@ -1,0 +1,183 @@
+{
+  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "properties": {
+    "id": "efcc6b55-4788-44f7-95c0-39954e79a226",
+    "name": "Selectores relacionados",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    }
+  },
+  "definition": [
+    {
+      "component_type": "core.Form",
+      "component_id": "4d50d038-ff3b-4f0b-88e8-a7bfc3e2ba14",
+      "namespace": "ppc",
+      "node_id": "form_asign_marca_sab_emp_prod",
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 9,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form asignaci\u00f3n Marca, Sabor, Empaque, Producto",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "drilldowns": [],
+        "style": {}
+      },
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Form",
+      "component_id": "5dfbe5f8-50d8-4528-8c8c-1f7cba4d48ca",
+      "namespace": "ppc",
+      "node_id": "form_c_selectores_rel",
+      "x": 6,
+      "y": 0,
+      "w": 6,
+      "h": 9,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form con selectores relacionados",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          },
+          "marca": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "ADES",
+              "CC",
+              "SP"
+            ]
+          },
+          "sabor": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer"
+          },
+          "empaque": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer"
+          },
+          "producto": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer"
+          },
+          "revenue": {
+            "readOnly": true,
+            "className": ""
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "drilldowns": [],
+        "style": {}
+      },
+      "filters": {},
+      "cell_properties": null
+    }
+  ]
+}

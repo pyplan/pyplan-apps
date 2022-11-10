@@ -1,0 +1,212 @@
+{
+  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "properties": {
+    "id": "a4aec986-0a62-41ef-970d-a38de31d04d2",
+    "name": "Formulario desde DataFrame",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    }
+  },
+  "definition": [
+    {
+      "component_type": "core.Form",
+      "component_id": "5409fe3e-7053-4ce5-a836-9115cf77dca3",
+      "namespace": "ppc",
+      "node_id": "form_desde_dataframe1",
+      "x": 2,
+      "y": 0,
+      "w": 10,
+      "h": 9,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Form desde DataFrame",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "unlink": [],
+        "pivot": {
+          "agg": "",
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id_col": {
+            "readOnly": true
+          },
+          "region": {
+            "readOnly": true,
+            "className": ""
+          },
+          "country": {
+            "readOnly": true,
+            "className": ""
+          },
+          "item_type": {
+            "readOnly": true,
+            "className": ""
+          },
+          "sales_channel": {
+            "readOnly": true,
+            "className": ""
+          },
+          "total_revenue": {
+            "readOnly": true,
+            "className": ""
+          },
+          "revenue_plus_extra": {
+            "readOnly": true,
+            "className": ""
+          },
+          "revenue_plus_pc": {
+            "readOnly": true,
+            "className": ""
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": [
+            {
+              "conditions": [
+                {
+                  "condition_type": "column",
+                  "dimension_name": "",
+                  "filter_type": "equal",
+                  "values": [
+                    "extra_revenue_val",
+                    "revenue_plus_extra",
+                    "total_revenue",
+                    "revenue_plus_pc"
+                  ],
+                  "apply_to": "values"
+                }
+              ],
+              "cell_properties": {
+                "style": {},
+                "conditional_format": [],
+                "value_format": {
+                  "type": "number",
+                  "thousands_separator": true,
+                  "decimal_places": 0,
+                  "prefix": "$ ",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition_type": "column",
+                  "dimension_name": "",
+                  "filter_type": "equal",
+                  "values": [
+                    "extra_revenue_pc"
+                  ],
+                  "apply_to": "values"
+                }
+              ],
+              "cell_properties": {
+                "style": {},
+                "conditional_format": [],
+                "value_format": {
+                  "type": "percent",
+                  "thousands_separator": true,
+                  "decimal_places": 2,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            }
+          ]
+        },
+        "value_format": {
+          "type": "number",
+          "thousands_separator": true,
+          "decimal_places": 2,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        },
+        "style": {},
+        "heatmap_properties": null
+      },
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Selector",
+      "component_id": "b1d19981-6596-4cfd-91eb-66eb8ccc8730",
+      "namespace": "ppc",
+      "node_id": "sales_data_region",
+      "x": 0,
+      "y": 0,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Sales data region",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "format": "default",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    }
+  ]
+}

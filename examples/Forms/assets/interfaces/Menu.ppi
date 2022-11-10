@@ -1,0 +1,174 @@
+{
+  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "properties": {
+    "id": "444ef11c-fec3-4ec8-9297-2a7034ec48b2",
+    "name": "Menu",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    }
+  },
+  "definition": [
+    {
+      "component_type": "core.Menu",
+      "component_id": "642f53a3-76fa-4f9d-8383-ceb0e4ef3fcc",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "format": "accordion",
+        "menu": {
+          "items": [
+            {
+              "id": "3u9zskh37k9fwfdimu24xb",
+              "parent": "root",
+              "text": "Simple",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": true
+              }
+            },
+            {
+              "id": "fl8kezaf5198al5r00hg0u",
+              "parent": "3u9zskh37k9fwfdimu24xb",
+              "text": "",
+              "droppable": false,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": [
+                  {
+                    "id": "h0mzcgo09gr9t3jqlvg55t",
+                    "pos": 1,
+                    "action_type": "interface",
+                    "text": "Columnas bloqueadas",
+                    "icon": null,
+                    "reference": "6a1a0ad7-2f34-4183-8a82-124146f061a3",
+                    "target": null,
+                    "disabled": null
+                  },
+                  {
+                    "id": "ypw361lurzs3lv2omb0dn7",
+                    "pos": 2,
+                    "action_type": "interface",
+                    "text": "Selectores (b\u00e1sico)",
+                    "icon": null,
+                    "reference": "6e49c17b-c0dc-4ef8-b12b-3819afffd8fa",
+                    "target": null,
+                    "disabled": null
+                  },
+                  {
+                    "id": "a8fsaacllsipb3y2xjw7q",
+                    "pos": 3,
+                    "action_type": "interface",
+                    "text": "Selectores relacionados",
+                    "icon": null,
+                    "reference": "efcc6b55-4788-44f7-95c0-39954e79a226",
+                    "target": null,
+                    "disabled": null
+                  }
+                ],
+                "open_at_startup": null
+              }
+            },
+            {
+              "id": "61hkg0opanwasnwi4ff3us",
+              "parent": "root",
+              "text": "Avanzado",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": true
+              }
+            },
+            {
+              "id": "db3kipvyoympd27b8mwv3n",
+              "parent": "61hkg0opanwasnwi4ff3us",
+              "text": "",
+              "droppable": false,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": [
+                  {
+                    "id": "k5bysa0jecmzy8yj5bhc",
+                    "pos": 1,
+                    "action_type": "interface",
+                    "text": "Formulario desde DataFrame",
+                    "icon": null,
+                    "reference": "a4aec986-0a62-41ef-970d-a38de31d04d2",
+                    "target": null,
+                    "disabled": null
+                  },
+                  {
+                    "id": "wk83ad1wujqv74t37em0ql",
+                    "pos": 2,
+                    "action_type": "interface",
+                    "text": "Filas personalizadas",
+                    "icon": "fa-duotone fa-rows",
+                    "reference": "004ba385-521e-4b10-b42f-fece6d33282a",
+                    "target": null,
+                    "disabled": null
+                  },
+                  {
+                    "id": "yxog5qrj1mmywc6xdvjhaf",
+                    "pos": 3,
+                    "action_type": "interface",
+                    "text": "Selectores filtrados por usuario",
+                    "icon": null,
+                    "reference": "d61da4cd-7c71-47df-b23a-366bde8895d5",
+                    "target": null,
+                    "disabled": null
+                  }
+                ],
+                "open_at_startup": null
+              }
+            },
+            {
+              "id": "root",
+              "parent": "main_root",
+              "text": "Root",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": null
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
