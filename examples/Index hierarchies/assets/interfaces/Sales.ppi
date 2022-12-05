@@ -26,7 +26,7 @@
       "node_id": "years",
       "x": 0,
       "y": 0,
-      "w": 2,
+      "w": 4,
       "h": 1,
       "error_code": null,
       "error_detail": null,
@@ -56,9 +56,9 @@
       "component_id": "06fc2c59-e179-4d73-bb9e-76d47f33ba2c",
       "namespace": "ppc",
       "node_id": "regions",
-      "x": 4,
-      "y": 0,
-      "w": 5,
+      "x": 0,
+      "y": 1,
+      "w": 8,
       "h": 1,
       "error_code": null,
       "error_detail": null,
@@ -88,9 +88,9 @@
       "component_id": "eb3ede83-382f-439e-bc3e-c708bc30f4aa",
       "namespace": "ppc",
       "node_id": "brands",
-      "x": 2,
+      "x": 4,
       "y": 0,
-      "w": 2,
+      "w": 4,
       "h": 1,
       "error_code": null,
       "error_detail": null,
@@ -122,10 +122,10 @@
       "component_type": "core.Indicator",
       "component_id": "590cc16f-7cd7-48e3-b85b-5a910b87c431",
       "namespace": "ppc",
-      "node_id": "sales_by_product_region_time",
-      "x": 9,
-      "y": 0,
-      "w": 3,
+      "node_id": "sales_by_product_region_sc_time",
+      "x": 8,
+      "y": 1,
+      "w": 4,
       "h": 1,
       "error_code": null,
       "error_detail": null,
@@ -134,7 +134,7 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Sales by Product, Region & Time",
+          "text": "Sales by Product, Region, Sales Channel & Time",
           "custom_text": "Total Sales",
           "show_units": true,
           "units_text": "$"
@@ -241,6 +241,9 @@
           "ADES",
           "Coca-Cola",
           "Sprite"
+        ],
+        "sales_channel_groups": [
+          "Online"
         ]
       },
       "alternative_properties": {
@@ -306,19 +309,19 @@
           "custom": []
         },
         "applied_hierarchies": {},
-        "calc_fields": {},
-        "function_calc_fields": {}
+        "function_calc_fields": {},
+        "calc_fields": {}
       }
     },
     {
       "component_type": "core.Chart",
       "component_id": "54e8cc2a-1d38-467a-8d90-9421b3e8b46b",
       "namespace": "ppc",
-      "node_id": "sales_by_product_region_time",
+      "node_id": "sales_by_product_region_sc_time",
       "x": 0,
-      "y": 1,
+      "y": 2,
       "w": 12,
-      "h": 6,
+      "h": 5,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -326,7 +329,7 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Sales by Product, Region & Time",
+          "text": "Sales by Product, Region, Sales Channel & Time",
           "custom_text": "",
           "show_units": true,
           "units_text": "$"
@@ -372,7 +375,8 @@
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
         "available_drilldown_indexes": [
-          "countries"
+          "countries",
+          "sales_channels"
         ],
         "supported_types_for_drilldown": [
           "column",
@@ -406,8 +410,8 @@
               "mode": "hide"
             },
             "labels_secondary_axis": {},
-            "style": {},
-            "conditional_format": []
+            "conditional_format": [],
+            "style": {}
           },
           "custom": []
         },
@@ -445,6 +449,9 @@
           "ADES",
           "Coca-Cola",
           "Sprite"
+        ],
+        "sales_channel_groups": [
+          "Online"
         ]
       },
       "alternative_properties": {
@@ -515,9 +522,40 @@
           "time": "years",
           "productos": "marcas"
         },
-        "calc_fields": {},
-        "function_calc_fields": {}
+        "function_calc_fields": {},
+        "calc_fields": {}
       }
+    },
+    {
+      "component_type": "core.Index",
+      "component_id": "d5672078-251d-49ce-9e18-c78cc18abf42",
+      "namespace": "ppc",
+      "node_id": "sales_channel_groups",
+      "x": 8,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Sales Channel Groups",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "single_select": false,
+        "format": "default",
+        "orientation": "horizontal"
+      },
+      "selected_values": [
+        "Online"
+      ]
     }
   ]
 }
