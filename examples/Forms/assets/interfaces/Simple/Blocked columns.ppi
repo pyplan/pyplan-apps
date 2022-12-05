@@ -1,8 +1,8 @@
 {
-  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Simple",
   "properties": {
     "id": "6a1a0ad7-2f34-4183-8a82-124146f061a3",
-    "name": "Columnas bloqueadas",
+    "name": "Blocked columns",
     "icon": null,
     "code": null,
     "grid": {
@@ -15,14 +15,15 @@
         "xxs": 1
       },
       "rowHeight": 70
-    }
+    },
+    "documentation": null
   },
   "definition": [
     {
       "component_type": "core.Form",
       "component_id": "45827693-1360-4192-ae56-d4b6a2ae2fbe",
       "namespace": "ppc",
-      "node_id": "form_c_cols_bloqueadas",
+      "node_id": "form_w_blocked_columns",
       "x": 0,
       "y": 1,
       "w": 12,
@@ -34,22 +35,23 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form con columnas bloqueadas",
+          "text": "Form with blocked columns",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -102,6 +104,18 @@
           "total": {
             "readOnly": true,
             "className": ""
+          },
+          "month_01": {
+            "readOnly": true,
+            "className": ""
+          },
+          "month_02": {
+            "readOnly": true,
+            "className": ""
+          },
+          "month_03": {
+            "readOnly": true,
+            "className": ""
           }
         },
         "right_total": false,
@@ -109,6 +123,26 @@
         "hide_empty_data": "",
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -117,9 +151,10 @@
           "suffix": "",
           "date_format": null
         },
-        "drilldowns": [],
+        "calc_fields": {},
         "style": {}
       },
+      "alternative_properties": null,
       "filters": {},
       "cell_properties": null
     },
@@ -127,10 +162,10 @@
       "component_type": "core.Selector",
       "component_id": "441f36df-b9f8-4f5b-bdb8-0e36a1b1282a",
       "namespace": "ppc",
-      "node_id": "ultimo_mes_real",
+      "node_id": "last_actual_month",
       "x": 0,
       "y": 0,
-      "w": 4,
+      "w": 3,
       "h": 1,
       "error_code": null,
       "error_detail": null,
@@ -139,11 +174,13 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "\u00daltimo mes real",
+          "text": "Last actual month",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "format": "default",
         "orientation": "horizontal",
         "page_size": 25

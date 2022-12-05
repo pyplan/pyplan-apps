@@ -1,8 +1,8 @@
 {
-  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Advanced",
   "properties": {
     "id": "d61da4cd-7c71-47df-b23a-366bde8895d5",
-    "name": "Selectores filtrados por usuario",
+    "name": "Filtered selectors by user",
     "icon": null,
     "code": null,
     "grid": {
@@ -15,18 +15,19 @@
         "xxs": 1
       },
       "rowHeight": 70
-    }
+    },
+    "documentation": null
   },
   "definition": [
     {
       "component_type": "core.Form",
       "component_id": "16cbca4e-d724-4381-bb52-e8030f16dd2d",
       "namespace": "ppc",
-      "node_id": "form_c_selectores_filt_x_usuario",
-      "x": 6,
-      "y": 0,
-      "w": 6,
-      "h": 8,
+      "node_id": "form_w_filt_by_user_selector",
+      "x": 5,
+      "y": 1,
+      "w": 7,
+      "h": 5,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -34,25 +35,26 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form con selectores filtrados por usuario",
+          "text": "Form with filtered by user selector",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [
           "item_type",
           "region"
         ],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -73,6 +75,9 @@
             "type": "dropdown",
             "renderer": "custom_dropdown_renderer",
             "source": [
+              "North America",
+              "South America",
+              "Europe",
               "Asia",
               "Africa"
             ]
@@ -96,6 +101,26 @@
         "hide_empty_data": "",
         "show_pivot_toolbar": false,
         "show_filter_toolbar": true,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -104,9 +129,10 @@
           "suffix": "",
           "date_format": null
         },
-        "drilldowns": [],
+        "calc_fields": {},
         "style": {}
       },
+      "alternative_properties": null,
       "filters": {
         "item_type": [],
         "region": []
@@ -117,11 +143,11 @@
       "component_type": "core.Form",
       "component_id": "6b7c10a0-984c-4892-a5f1-02ca9ebbe6f4",
       "namespace": "ppc",
-      "node_id": "form_c_regiones_x_usuario",
+      "node_id": "regions_by_user",
       "x": 0,
-      "y": 1,
-      "w": 6,
-      "h": 7,
+      "y": 0,
+      "w": 5,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -129,22 +155,23 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form con regiones por usuario",
+          "text": "Regions by user",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -187,6 +214,26 @@
         "hide_empty_data": "",
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -195,9 +242,10 @@
           "suffix": "",
           "date_format": null
         },
-        "drilldowns": [],
+        "calc_fields": {},
         "style": {}
       },
+      "alternative_properties": null,
       "filters": {},
       "cell_properties": null
     },
@@ -205,10 +253,10 @@
       "component_type": "core.Selector",
       "component_id": "6016046d-70ae-4e40-ad7c-696d8098614e",
       "namespace": "ppc",
-      "node_id": "quien_soy",
-      "x": 0,
+      "node_id": "who_am_i",
+      "x": 5,
       "y": 0,
-      "w": 6,
+      "w": 7,
       "h": 1,
       "error_code": null,
       "error_detail": null,
@@ -217,11 +265,13 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Qui\u00e9n soy?",
+          "text": "Who am I?",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "format": "default",
         "orientation": "horizontal",
         "page_size": 25

@@ -1,8 +1,8 @@
 {
-  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Advanced",
   "properties": {
     "id": "004ba385-521e-4b10-b42f-fece6d33282a",
-    "name": "Filas personalizadas",
+    "name": "Custom row styles",
     "icon": "fa-duotone fa-rows",
     "code": null,
     "grid": {
@@ -15,14 +15,15 @@
         "xxs": 1
       },
       "rowHeight": 70
-    }
+    },
+    "documentation": null
   },
   "definition": [
     {
       "component_type": "core.Form",
       "component_id": "dd3a879d-e565-48ea-a904-52fee5d06ca9",
       "namespace": "ppc",
-      "node_id": "demanda_por_sku",
+      "node_id": "form_w_custom_rows",
       "x": 0,
       "y": 0,
       "w": 3,
@@ -152,7 +153,7 @@
       "component_type": "core.Table",
       "component_id": "77cea2df-6df9-45a3-9f7c-beb791924ade",
       "namespace": "ppc",
-      "node_id": "valores_en_formulario",
+      "node_id": "values_from_form",
       "x": 3,
       "y": 0,
       "w": 8,

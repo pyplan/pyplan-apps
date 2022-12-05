@@ -1,8 +1,8 @@
 {
-  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Simple",
   "properties": {
     "id": "6e49c17b-c0dc-4ef8-b12b-3819afffd8fa",
-    "name": "Selectores (b\u00e1sico)",
+    "name": "Basic selectors",
     "icon": null,
     "code": null,
     "grid": {
@@ -15,18 +15,19 @@
         "xxs": 1
       },
       "rowHeight": 70
-    }
+    },
+    "documentation": null
   },
   "definition": [
     {
       "component_type": "core.Form",
       "component_id": "53e23b8a-c775-42f6-a5a7-f64753085aab",
       "namespace": "ppc",
-      "node_id": "form_c_selectores",
+      "node_id": "form_w_selectors",
       "x": 2,
       "y": 0,
       "w": 5,
-      "h": 8,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -34,22 +35,23 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form con selectores",
+          "text": "Form with selectors",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -85,6 +87,26 @@
         "hide_empty_data": "",
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -93,11 +115,15 @@
           "suffix": "",
           "date_format": null
         },
-        "drilldowns": [],
+        "calc_fields": {},
         "style": {}
       },
+      "alternative_properties": null,
       "filters": {
-        "item_type": [],
+        "item_type": [
+          "Beverages",
+          "Food"
+        ],
         "region": []
       },
       "cell_properties": null
@@ -110,7 +136,7 @@
       "x": 7,
       "y": 0,
       "w": 5,
-      "h": 8,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -123,10 +149,21 @@
           "show_units": true,
           "units_text": ""
         },
-        "type": "bar",
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "column",
+          "subtype": "column_stacked",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "stack"
+          },
+          "chart_update_traces": {}
+        },
         "chart_properties": {
-          "template": "simple_white",
-          "color_discrete_sequence": "Prism"
+          "template": "simple_white"
         },
         "chart_layout": {},
         "selected_event": false,
@@ -135,11 +172,13 @@
         "drilldown_event": true,
         "unlink": [],
         "pivot": {
-          "agg": "sum",
+          "agg": {
+            "values": "sum"
+          },
           "params": {
-            "x": "item_type",
+            "x": "region",
             "y": "values",
-            "color": "region"
+            "color": "item_type"
           }
         },
         "page_size": {
@@ -150,6 +189,45 @@
         "drilldowns": [],
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
+        "available_drilldown_indexes": [],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "$ ",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "Prism",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "",
+            "labels": {
+              "field": "values",
+              "min_size": 8,
+              "mode": "hide"
+            },
+            "labels_secondary_axis": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": [],
+        "type": null,
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -157,24 +235,16 @@
           "prefix": "",
           "suffix": "",
           "date_format": null
-        },
-        "available_drilldown_indexes": [],
-        "supported_types_for_drilldown": [
-          "bar",
-          "line",
-          "scatter",
-          "area",
-          "pie",
-          "funnel",
-          "funnel_area",
-          "histogram",
-          "strip"
-        ]
+        }
       },
       "filters": {
-        "item_type": [],
+        "item_type": [
+          "Beverages",
+          "Food"
+        ],
         "region": []
-      }
+      },
+      "alternative_properties": null
     },
     {
       "component_type": "core.Index",
@@ -184,7 +254,7 @@
       "x": 0,
       "y": 0,
       "w": 2,
-      "h": 8,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -197,11 +267,16 @@
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "single_select": false,
         "format": "default",
         "orientation": "vertical"
       },
-      "selected_values": []
+      "selected_values": [
+        "Beverages",
+        "Food"
+      ]
     }
   ]
 }

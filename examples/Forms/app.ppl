@@ -1,12 +1,12 @@
 {
   "modelProp": {
-    "title": "Forms",
-    "libs": []
+    "title": "Forms"
   },
   "appProperties": {
     "id": "9dbf2e36-55a3-4e02-aa5d-418c48c85506",
     "defaultInterface": "444ef11c-fec3-4ec8-9297-2a7034ec48b2",
     "defaultInterfaceByDepartment": [],
-    "description": null
+    "description": null,
+    "customSeriesColors": []
   }
 }

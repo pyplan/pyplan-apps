@@ -1,8 +1,8 @@
 {
-  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Advanced",
   "properties": {
     "id": "a4aec986-0a62-41ef-970d-a38de31d04d2",
-    "name": "Formulario desde DataFrame",
+    "name": "Form from DataFrame",
     "icon": null,
     "code": null,
     "grid": {
@@ -15,18 +15,19 @@
         "xxs": 1
       },
       "rowHeight": 70
-    }
+    },
+    "documentation": null
   },
   "definition": [
     {
       "component_type": "core.Form",
       "component_id": "5409fe3e-7053-4ce5-a836-9115cf77dca3",
       "namespace": "ppc",
-      "node_id": "form_desde_dataframe1",
+      "node_id": "form_form_dataframe",
       "x": 2,
       "y": 0,
       "w": 10,
-      "h": 9,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -34,22 +35,23 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form desde DataFrame",
+          "text": "Form from DataFrame",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -168,6 +170,11 @@
             }
           ]
         },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
+        "heatmap_properties": null,
         "value_format": {
           "type": "number",
           "thousands_separator": true,
@@ -176,9 +183,10 @@
           "suffix": "",
           "date_format": null
         },
-        "style": {},
-        "heatmap_properties": null
+        "calc_fields": {},
+        "style": {}
       },
+      "alternative_properties": null,
       "filters": {},
       "cell_properties": null
     },
@@ -203,6 +211,8 @@
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "format": "default",
         "orientation": "horizontal",
         "page_size": 25

@@ -1,8 +1,8 @@
 {
-  "uri": "/data/models/pyplan/Public/Ejemplos de formularios/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Simple",
   "properties": {
     "id": "efcc6b55-4788-44f7-95c0-39954e79a226",
-    "name": "Selectores relacionados",
+    "name": "Related selectors",
     "icon": null,
     "code": null,
     "grid": {
@@ -15,18 +15,19 @@
         "xxs": 1
       },
       "rowHeight": 70
-    }
+    },
+    "documentation": null
   },
   "definition": [
     {
       "component_type": "core.Form",
       "component_id": "4d50d038-ff3b-4f0b-88e8-a7bfc3e2ba14",
       "namespace": "ppc",
-      "node_id": "form_asign_marca_sab_emp_prod",
+      "node_id": "brand_taste_packing_prod_alloc",
       "x": 0,
       "y": 0,
       "w": 6,
-      "h": 9,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -34,22 +35,23 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form asignaci\u00f3n Marca, Sabor, Empaque, Producto",
+          "text": "Brand, Taste, Packing, Product Allocation",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -72,6 +74,26 @@
         "hide_empty_data": "",
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -80,9 +102,10 @@
           "suffix": "",
           "date_format": null
         },
-        "drilldowns": [],
+        "calc_fields": {},
         "style": {}
       },
+      "alternative_properties": null,
       "filters": {},
       "cell_properties": null
     },
@@ -90,11 +113,11 @@
       "component_type": "core.Form",
       "component_id": "5dfbe5f8-50d8-4528-8c8c-1f7cba4d48ca",
       "namespace": "ppc",
-      "node_id": "form_c_selectores_rel",
+      "node_id": "form_w_related_selectors",
       "x": 6,
       "y": 0,
       "w": 6,
-      "h": 9,
+      "h": 6,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -102,22 +125,23 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Form con selectores relacionados",
+          "text": "Form with related selectors",
           "custom_text": "",
           "show_units": true,
           "units_text": ""
         },
+        "hide_header": null,
+        "hide_border": null,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
-        "calc_fields": {},
-        "function_calc_fields": {},
+        "calculated_fields": [],
         "unlink": [],
         "pivot": {
-          "agg": "",
+          "agg": {},
           "params": {
             "rows": [],
             "columns": [],
@@ -158,6 +182,27 @@
           "revenue": {
             "readOnly": true,
             "className": ""
+          },
+          "brand": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "Ades",
+              "Coca-Cola",
+              "Sprite"
+            ]
+          },
+          "taste": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer"
+          },
+          "packing": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer"
+          },
+          "product": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer"
           }
         },
         "right_total": false,
@@ -165,6 +210,26 @@
         "hide_empty_data": "",
         "show_pivot_toolbar": false,
         "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1,
+        "function_calc_fields": {},
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -173,9 +238,10 @@
           "suffix": "",
           "date_format": null
         },
-        "drilldowns": [],
+        "calc_fields": {},
         "style": {}
       },
+      "alternative_properties": null,
       "filters": {},
       "cell_properties": null
     }
