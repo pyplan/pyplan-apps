@@ -1,0 +1,32 @@
+{
+  "modelProp": {},
+  "appProperties": {
+    "id": "91aa8b15-f3b2-4e07-a71a-009e346c31e3",
+    "defaultInterface": "0026f30b-b167-4da4-b19c-48b0ba9a37ff",
+    "defaultInterfaceByDepartment": [],
+    "description": "<p><span style=\"font-size: 18pt;\">La jerarqu&iacute;a de los &iacute;ndices se define en la ventana de propiedades de un nodo tipo &iacute;ndice</span></p>",
+    "customSeriesColors": [
+      {
+        "id": "gytbts9ku8nghup0va9e9",
+        "title": "",
+        "values": [
+          {
+            "id": 1,
+            "text": "Ades",
+            "color": "#EBE3D0"
+          },
+          {
+            "id": 2,
+            "text": "Coca-Cola",
+            "color": "#E61B23"
+          },
+          {
+            "id": 3,
+            "text": "Sprite",
+            "color": "#00A34C"
+          }
+        ]
+      }
+    ]
+  }
+}

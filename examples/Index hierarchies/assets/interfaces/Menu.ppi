@@ -1,0 +1,106 @@
+{
+  "uri": "/data/models/pyplan/llascano-cfae2d4f/Index hierarchies/assets/interfaces",
+  "properties": {
+    "id": "0026f30b-b167-4da4-b19c-48b0ba9a37ff",
+    "name": "Menu",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Menu",
+      "component_id": "d96da722-3d0d-478d-80c3-9ce31046ce91",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 6,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "format": "accordion",
+        "menu": {
+          "items": [
+            {
+              "id": "hxzm8ll2vdriyjqtw4u83s",
+              "parent": "root",
+              "text": "Hierarchies",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": "fa-duotone fa-project-diagram",
+                "actions": null,
+                "open_at_startup": true,
+                "subtitle": null
+              }
+            },
+            {
+              "id": "root",
+              "parent": "main_root",
+              "text": "Root",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": null,
+                "subtitle": null
+              }
+            },
+            {
+              "id": "n9rl8qbln4yfkco6aj98",
+              "parent": "hxzm8ll2vdriyjqtw4u83s",
+              "text": "",
+              "droppable": false,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": [
+                  {
+                    "id": "0sgl2fmkn94nxr93dbtwbkm",
+                    "pos": 1,
+                    "action_type": "interface",
+                    "text": "Ventas",
+                    "icon": "fa-duotone fa-area-chart",
+                    "reference": "e25760db-11f2-4a4b-99ec-5aabaee4c104",
+                    "target": null,
+                    "disabled": null,
+                    "subtitle": null
+                  }
+                ],
+                "open_at_startup": null,
+                "subtitle": null
+              }
+            }
+          ]
+        },
+        "items_per_row": 4,
+        "align_items": "center"
+      }
+    }
+  ]
+}

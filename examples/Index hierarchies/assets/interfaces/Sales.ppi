@@ -1,0 +1,523 @@
+{
+  "uri": "/data/models/pyplan/llascano-cfae2d4f/Index hierarchies/assets/interfaces",
+  "properties": {
+    "id": "e25760db-11f2-4a4b-99ec-5aabaee4c104",
+    "name": "Sales",
+    "icon": "fa-duotone fa-area-chart",
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Index",
+      "component_id": "e240d769-ad35-4c4b-89d7-223c8b989882",
+      "namespace": "ppc",
+      "node_id": "years",
+      "x": 0,
+      "y": 0,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Years",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "single_select": false,
+        "format": "default",
+        "orientation": "horizontal"
+      },
+      "selected_values": [
+        "2023",
+        "2024"
+      ]
+    },
+    {
+      "component_type": "core.Index",
+      "component_id": "06fc2c59-e179-4d73-bb9e-76d47f33ba2c",
+      "namespace": "ppc",
+      "node_id": "regions",
+      "x": 2,
+      "y": 0,
+      "w": 8,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Regions",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "single_select": false,
+        "format": "default",
+        "orientation": "horizontal"
+      },
+      "selected_values": [
+        "Europe",
+        "North America"
+      ]
+    },
+    {
+      "component_type": "core.Index",
+      "component_id": "eb3ede83-382f-439e-bc3e-c708bc30f4aa",
+      "namespace": "ppc",
+      "node_id": "brands",
+      "x": 10,
+      "y": 0,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Brands",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "single_select": false,
+        "format": "default",
+        "orientation": "horizontal"
+      },
+      "selected_values": [
+        "SP",
+        "CC",
+        "ADES",
+        "Coca-Cola",
+        "Sprite"
+      ]
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "590cc16f-7cd7-48e3-b85b-5a910b87c431",
+      "namespace": "ppc",
+      "node_id": "sales_by_product_region_time",
+      "x": 0,
+      "y": 1,
+      "w": 3,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Sales by Product, Region & Time",
+          "custom_text": "Total Sales",
+          "show_units": true,
+          "units_text": "$"
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {
+            "values": "sum"
+          },
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "23px",
+              "font-style": "normal",
+              "text-align": "center"
+            },
+            "conditional_format": [
+              {
+                "from_": -9999999999.0,
+                "to": 5000.0,
+                "style": {
+                  "color": "#FF0000"
+                },
+                "shape": {
+                  "icon": {
+                    "prefix": "fad",
+                    "name": "fa-circle"
+                  },
+                  "color": "#FF0000"
+                }
+              },
+              {
+                "from_": 5000.0000001,
+                "to": 10000.0,
+                "style": {
+                  "color": "#FFC000"
+                },
+                "shape": {
+                  "icon": {
+                    "prefix": "fad",
+                    "name": "fa-circle"
+                  },
+                  "color": "#FFC000"
+                }
+              },
+              {
+                "from_": 10000.00001,
+                "to": 99999999999.0,
+                "style": {
+                  "color": "#00B050"
+                },
+                "shape": {
+                  "icon": {
+                    "prefix": "fad",
+                    "name": "fa-circle"
+                  },
+                  "color": "#00B050"
+                }
+              }
+            ],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "$ ",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {
+        "sabores": [],
+        "years": [
+          "2023",
+          "2024"
+        ],
+        "regiones": [
+          "Europe",
+          "Asia",
+          "Sub-Saharan Africa",
+          "Middle East and North Africa"
+        ],
+        "marcas": [
+          "SP",
+          "CC",
+          "ADES"
+        ],
+        "regions": [
+          "Europe",
+          "North America"
+        ],
+        "brands": [
+          "SP",
+          "CC",
+          "ADES",
+          "Coca-Cola",
+          "Sprite"
+        ]
+      },
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Ventas por Producto, Regi\u00f3n y Time",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "$"
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": "sum",
+          "params": {
+            "rows": [
+              "productos"
+            ],
+            "columns": [
+              "time"
+            ],
+            "measures": [
+              "values"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calc_fields": {},
+        "function_calc_fields": {}
+      }
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "54e8cc2a-1d38-467a-8d90-9421b3e8b46b",
+      "namespace": "ppc",
+      "node_id": "sales_by_product_region_time",
+      "x": 0,
+      "y": 2,
+      "w": 12,
+      "h": 7,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Sales by Product, Region & Time",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "$"
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "column",
+          "subtype": "column_normal",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "group"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "values": "sum"
+          },
+          "params": {
+            "y": "values",
+            "x": "quarters",
+            "color": "brands"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "countries"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "$ ",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "gytbts9ku8nghup0va9e9",
+            "labels": {
+              "field": "values",
+              "min_size": 8,
+              "mode": "hide"
+            },
+            "labels_secondary_axis": {},
+            "style": {},
+            "conditional_format": []
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {
+          "time": "quarters",
+          "productos": "marcas",
+          "products": "brands"
+        },
+        "calculated_fields": []
+      },
+      "filters": {
+        "sabores": [],
+        "years": [
+          "2023",
+          "2024"
+        ],
+        "regiones": [
+          "Europe",
+          "Asia",
+          "Sub-Saharan Africa",
+          "Middle East and North Africa"
+        ],
+        "marcas": [
+          "SP",
+          "CC",
+          "ADES"
+        ],
+        "regions": [
+          "Europe",
+          "North America"
+        ],
+        "brands": [
+          "SP",
+          "CC",
+          "ADES",
+          "Coca-Cola",
+          "Sprite"
+        ]
+      },
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Ventas por Producto, Regi\u00f3n y Time",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "$"
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "values": "sum"
+          },
+          "params": {
+            "rows": [
+              "paises"
+            ],
+            "columns": [
+              "years"
+            ],
+            "measures": [
+              "values"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": true,
+        "bottom_total": true,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {
+          "time": "years",
+          "productos": "marcas"
+        },
+        "calc_fields": {},
+        "function_calc_fields": {}
+      }
+    }
+  ]
+}
