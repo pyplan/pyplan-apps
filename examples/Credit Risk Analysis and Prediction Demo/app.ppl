@@ -1,0 +1,31 @@
+{
+  "modelProp": {
+    "changeIdentifier": "1",
+    "onOpenDashId": "3774",
+    "onOpenModel": "openDashboard"
+  },
+  "appProperties": {
+    "id": "373ba119-b439-4362-b140-50a9ef212eb1",
+    "defaultInterface": "448be3d7-aee9-4af9-aece-187d9b94537a",
+    "defaultInterfaceByDepartment": [],
+    "description": null,
+    "customSeriesColors": [
+      {
+        "id": "okj9vey2p1qtby92y44q2i",
+        "title": "Risk",
+        "values": [
+          {
+            "id": 1,
+            "text": "good",
+            "color": "#93C47D"
+          },
+          {
+            "id": 2,
+            "text": "bad",
+            "color": "#EA9999"
+          }
+        ]
+      }
+    ]
+  }
+}

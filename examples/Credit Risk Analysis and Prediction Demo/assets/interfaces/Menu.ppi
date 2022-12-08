@@ -1,0 +1,177 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces",
+  "properties": {
+    "id": "448be3d7-aee9-4af9-aece-187d9b94537a",
+    "name": "Menu",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Menu",
+      "component_id": "3931362a-1744-442e-9528-d79e7fd749e2",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "format": "accordion",
+        "menu": {
+          "items": [
+            {
+              "id": "y9p7bm25mwbkgt9mo8d0c",
+              "parent": "root",
+              "text": "Data Exploration & Analysis",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": "fa-duotone fa-area-chart",
+                "actions": null,
+                "open_at_startup": true,
+                "subtitle": null
+              }
+            },
+            {
+              "id": "tngyvlsed8qpv70vm2wim",
+              "parent": "root",
+              "text": "Machine Learning & Predictions",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": "fa-duotone fa-gear",
+                "actions": null,
+                "open_at_startup": true,
+                "subtitle": null
+              }
+            },
+            {
+              "id": "stxp8wis5jlhjexp7dab8v",
+              "parent": "y9p7bm25mwbkgt9mo8d0c",
+              "text": "",
+              "droppable": false,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": [
+                  {
+                    "id": "ne5l5dg6ym9v771bl6oiw",
+                    "pos": 1,
+                    "action_type": "interface",
+                    "text": "Analysis 1",
+                    "icon": null,
+                    "reference": "92be1e59-bb35-4c82-a10c-4dbc97ec2877",
+                    "target": null,
+                    "disabled": null,
+                    "subtitle": null
+                  },
+                  {
+                    "id": "vjb26amyqnpsgne6pltt",
+                    "pos": 2,
+                    "action_type": "interface",
+                    "text": "Analysis 2",
+                    "icon": "fa-duotone fa-line-chart",
+                    "reference": "f602754d-ddec-447b-b455-6cf93b49213d",
+                    "target": null,
+                    "disabled": null,
+                    "subtitle": null
+                  },
+                  {
+                    "id": "m85hov39g8ou7k3ygdz9a",
+                    "pos": 3,
+                    "action_type": "interface",
+                    "text": "Analysis 3",
+                    "icon": null,
+                    "reference": "c931632c-38b3-4a42-a3a3-c603693b4e9f",
+                    "target": null,
+                    "disabled": null,
+                    "subtitle": null
+                  }
+                ],
+                "open_at_startup": null,
+                "subtitle": null
+              }
+            },
+            {
+              "id": "root",
+              "parent": "main_root",
+              "text": "Root",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": null,
+                "subtitle": null
+              }
+            },
+            {
+              "id": "124mgifd6yxlcj5fvnx7kwm",
+              "parent": "tngyvlsed8qpv70vm2wim",
+              "text": "",
+              "droppable": false,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": [
+                  {
+                    "id": "0crlqel04cvikm4i9t7ft",
+                    "pos": 1,
+                    "action_type": "interface",
+                    "text": "Machine Learning Process and Results",
+                    "icon": null,
+                    "reference": "68e3aff7-1473-43b3-abac-529c762c2715",
+                    "target": null,
+                    "disabled": null,
+                    "subtitle": null
+                  },
+                  {
+                    "id": "7bwkr3zx9xdk9hnc81x9bq",
+                    "pos": 2,
+                    "action_type": "interface",
+                    "text": "New Loans Simulation",
+                    "icon": null,
+                    "reference": "1093167d-ac39-4f77-b0c0-b7beaa971675",
+                    "target": null,
+                    "disabled": null,
+                    "subtitle": null
+                  }
+                ],
+                "open_at_startup": null,
+                "subtitle": null
+              }
+            }
+          ]
+        },
+        "items_per_row": 2,
+        "align_items": "center"
+      }
+    }
+  ]
+}

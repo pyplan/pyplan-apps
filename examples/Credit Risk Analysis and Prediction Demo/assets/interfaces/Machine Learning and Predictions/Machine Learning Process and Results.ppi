@@ -1,0 +1,1260 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces/Machine Learning and Predictions",
+  "properties": {
+    "id": "68e3aff7-1473-43b3-abac-529c762c2715",
+    "name": "Machine Learning Process and Results",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Indicator",
+      "component_id": "5e89df95-2357-43a7-b7dd-899fb34fe603",
+      "namespace": "ppc",
+      "node_id": "accuracy_rfm",
+      "x": 0,
+      "y": 1,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Accuracy - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "7645d294-8d6e-4217-a263-c4d444ec8644",
+      "namespace": "ppc",
+      "node_id": "precision_score_rfm",
+      "x": 0,
+      "y": 2,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Precision Score - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "7332c599-4cd3-408f-99c7-d8290429d971",
+      "namespace": "ppc",
+      "node_id": "recall_score_rfm",
+      "x": 0,
+      "y": 3,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Recall - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "22ec6f3e-2a4d-4dbb-99f8-76c985aad0db",
+      "namespace": "ppc",
+      "node_id": "accuracy_lrm",
+      "x": 4,
+      "y": 1,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Accuracy - Logistic Regression Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "4e4b5351-4969-47c4-92b9-b87d417e0723",
+      "namespace": "ppc",
+      "node_id": "precision_score_lrm",
+      "x": 4,
+      "y": 2,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Precision Score - Logistic Regression Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "ba51476c-f7c6-41c3-a3ae-8715058add3b",
+      "namespace": "ppc",
+      "node_id": "recall_score_lrm",
+      "x": 4,
+      "y": 3,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Recall - Logistic Regression Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "486f7c17-e0b0-4251-ac98-3a72c1150950",
+      "namespace": "ppc",
+      "node_id": "accuracy_gnb",
+      "x": 8,
+      "y": 1,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Accuracy - Gaussian NB Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "b1856163-9749-4879-acbd-15208253e2b8",
+      "namespace": "ppc",
+      "node_id": "precision_score_gnb",
+      "x": 8,
+      "y": 2,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Precision Score - Gaussian NB Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "a29e992b-3f2d-4ddd-98fc-382f5ccdc262",
+      "namespace": "ppc",
+      "node_id": "recall_score_gnb",
+      "x": 8,
+      "y": 3,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Recall - Gaussian NB Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Html",
+      "component_id": "b8f7bc5c-5a35-4313-bec1-d64d1f245215",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 0,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "html": "<div style=\"height: 100%; display: flex; align-items: center; justify-content: center; background-color: gray;\">\n<p><span style=\"font-size: 18pt; color: white;\"><strong>RANDOM FOREST</strong></span></p>\n</div>"
+      }
+    },
+    {
+      "component_type": "core.Html",
+      "component_id": "f49b0cf4-559f-4f67-8d4b-7f22ebeb42e6",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 4,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "html": "<div style=\"height: 100%; display: flex; align-items: center; justify-content: center; background-color: gray;\">\n<p><span style=\"font-size: 18pt; color: white;\"><strong>LOGISTIC REGRESSION</strong></span></p>\n</div>"
+      }
+    },
+    {
+      "component_type": "core.Html",
+      "component_id": "0f1f2a5a-ab39-416b-b014-fcefa680dd0f",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 8,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "html": "<div style=\"height: 100%; display: flex; align-items: center; justify-content: center; background-color: gray;\">\n<p><span style=\"font-size: 18pt; color: white;\"><strong>GAUSSIAN NAIVE BAYES</strong></span></p>\n</div>"
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "4bfb77a2-14bd-4572-b80d-774a71b082bb",
+      "namespace": "ppc",
+      "node_id": "confusion_matrix_rfm",
+      "x": 0,
+      "y": 4,
+      "w": 4,
+      "h": 3,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Confusion Matrix - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "values": "sum"
+          },
+          "params": {
+            "rows": [
+              "Actual"
+            ],
+            "columns": [
+              "Predicted"
+            ],
+            "measures": [
+              "values"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": true,
+        "bottom_total": true,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": [
+            {
+              "conditions": [
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Actual",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                },
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Predicted",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                }
+              ],
+              "cell_properties": {
+                "style": {
+                  "font-weight": "bold"
+                },
+                "conditional_format": [],
+                "value_format": {
+                  "thousands_separator": false,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            }
+          ]
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "c6511ee7-3573-40a2-bf01-6cf39a31dc05",
+      "namespace": "ppc",
+      "node_id": "confusion_matrix_lrm",
+      "x": 4,
+      "y": 4,
+      "w": 4,
+      "h": 3,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Confusion Matrix - Logistic Regression Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "values": "sum"
+          },
+          "params": {
+            "rows": [
+              "Actual"
+            ],
+            "columns": [
+              "Predicted"
+            ],
+            "measures": [
+              "values"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": true,
+        "bottom_total": true,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": [
+            {
+              "conditions": [
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Actual",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                },
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Predicted",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                }
+              ],
+              "cell_properties": {
+                "style": {
+                  "font-weight": "bold"
+                },
+                "conditional_format": [],
+                "value_format": {
+                  "thousands_separator": false,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            }
+          ]
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "265ccf77-c8eb-4f0c-a165-802ef5a9937a",
+      "namespace": "ppc",
+      "node_id": "confusion_matrix_gnb",
+      "x": 8,
+      "y": 4,
+      "w": 4,
+      "h": 3,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Confusion Matrix - Gaussian NB Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "values": "sum"
+          },
+          "params": {
+            "rows": [
+              "Actual"
+            ],
+            "columns": [
+              "Predicted"
+            ],
+            "measures": [
+              "values"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": true,
+        "bottom_total": true,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": [
+            {
+              "conditions": [
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Actual",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                },
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Predicted",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                }
+              ],
+              "cell_properties": {
+                "style": {
+                  "font-weight": "bold"
+                },
+                "conditional_format": [],
+                "value_format": {
+                  "thousands_separator": false,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            }
+          ]
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "dcd9af55-6447-4076-a5de-de21eef7121f",
+      "namespace": "ppc",
+      "node_id": "roc_auc_rfm",
+      "x": 0,
+      "y": 7,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "ROC AUC - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 4,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "00f13bae-93a6-4c5e-88a5-61072e4a56ce",
+      "namespace": "ppc",
+      "node_id": "roc_auc_lrm",
+      "x": 4,
+      "y": 7,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "ROC AUC - Logistic Regression Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 4,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "5dba5de0-8bae-4ac9-9a58-8a5627ddc19b",
+      "namespace": "ppc",
+      "node_id": "roc_auc_gnb",
+      "x": 8,
+      "y": 7,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "ROC AUC - Gaussian NB Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 4,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.PlotlyChart",
+      "component_id": "0516a543-c63c-4e03-a9c2-285797e80528",
+      "namespace": "ppc",
+      "node_id": "roc_curve_gnb",
+      "x": 8,
+      "y": 8,
+      "w": 4,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "ROC Curve - Gaussian NB Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null
+      }
+    },
+    {
+      "component_type": "core.PlotlyChart",
+      "component_id": "33526154-1ed8-4097-b6ce-8fa7bd422b18",
+      "namespace": "ppc",
+      "node_id": "roc_curve_rfm",
+      "x": 0,
+      "y": 8,
+      "w": 4,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "ROC Curve - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null
+      }
+    },
+    {
+      "component_type": "core.PlotlyChart",
+      "component_id": "a50f2532-2125-48e6-8d55-7a954eff8689",
+      "namespace": "ppc",
+      "node_id": "roc_curve_lrm",
+      "x": 4,
+      "y": 8,
+      "w": 4,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "ROC Curve - Logistic Regression Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "a8cbcae8-8dfc-4a6c-a5ad-df9a6f59e753",
+      "namespace": "ppc",
+      "node_id": "feature_importance_rfm",
+      "x": 0,
+      "y": 13,
+      "w": 4,
+      "h": 6,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Feature Importance - Random Forest Method",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "importance": "sum"
+          },
+          "params": {
+            "rows": [
+              "feature"
+            ],
+            "columns": [],
+            "measures": [
+              "importance"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": true,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "percent",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "heatmap": {
+              "by": "total",
+              "heatmap_color": "custom",
+              "hex_base_background_color": "#00B050",
+              "hex_text_color": "#000000",
+              "exclude_nans": false,
+              "exclude_right_total": true,
+              "exclude_bottom_total": true
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    }
+  ]
+}

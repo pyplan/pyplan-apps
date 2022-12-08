@@ -1,0 +1,1178 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces/Data Exploration and Analysis",
+  "properties": {
+    "id": "92be1e59-bb35-4c82-a10c-4dbc97ec2877",
+    "name": "Analysis 1",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Table",
+      "component_id": "610a3433-e1ee-49b2-8d67-adbade4734bd",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 0,
+      "y": 0,
+      "w": 4,
+      "h": 12,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "value": "sum"
+          },
+          "params": {
+            "rows": [
+              "Housing",
+              "Sex",
+              "Age category"
+            ],
+            "columns": [
+              "Risk"
+            ],
+            "measures": [
+              "value"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": true,
+        "bottom_total": true,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": [
+            {
+              "conditions": [
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Risk",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                },
+                {
+                  "condition_type": "index",
+                  "dimension_name": "Housing",
+                  "filter_type": "equal",
+                  "values": [
+                    "Total"
+                  ],
+                  "apply_to": "all"
+                }
+              ],
+              "cell_properties": {
+                "style": {
+                  "font-weight": "bold"
+                },
+                "conditional_format": [],
+                "value_format": {
+                  "thousands_separator": false,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            }
+          ]
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "85824fee-c4e2-415e-a8de-a8d26c6c6638",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 4,
+      "y": 0,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "column",
+          "subtype": "column_stacked",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "stack"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "Age": "sum",
+            "value": "sum"
+          },
+          "params": {
+            "y": "value",
+            "color": "Risk",
+            "x": "Housing"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "Age",
+          "Sex",
+          "Job",
+          "Saving accounts",
+          "Checking account",
+          "Credit amount",
+          "Duration",
+          "Purpose",
+          "Age category",
+          "Job category"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "okj9vey2p1qtby92y44q2i",
+            "labels": {
+              "field": "value",
+              "min_size": 8,
+              "mode": "hide"
+            },
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "0f662859-b709-4121-90d7-62872da66240",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 8,
+      "y": 4,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": "import plotly.express as px\nimport plotly.graph_objects as go\n\nimport pyplan_core.interface.components.core as ppc\nimport pyplan_core.interface.classes as ppcl\nfrom pyplan_core.interface.components.events import BaseEvent\n\n\nclass MyComponent(ppc.Chart):\n    \n    def render(self, df: pd.DataFrame, pivot_properties: dict, event: BaseEvent = None, **kwargs) -> go.Figure:\n        \"\"\"Renders the component and returns a Figure object\n        Visit https://plotly.com/python/plotly-express/ for more information\n        \"\"\"\n        # Generate Plotly figure\n        fig = px.bar(\n            df,\n            # Pivot params\n            x=pivot_properties.get('x'),\n            y=pivot_properties.get('y'),\n            color=pivot_properties.get('color'),\n            # Chart params\n            template='simple_white',\n            color_discrete_map={'good': '#93C47D', 'bad': '#EA9999'},\n            text='value',\n            category_orders={pivot_properties.get('x'): sorted(df[pivot_properties.get('x')].unique().tolist())}\n        )\n        # Modify traces\n        fig.update_traces(\n            texttemplate='%{text:,.0f}',\n        )\n        # Modify axes\n        fig.update_xaxes(\n            type='category',\n        )\n        fig.update_yaxes(\n            tickformat=',.0f',\n        )\n        # Modify layout\n        fig.update_layout(\n            barmode='stack',\n            uniformtext={'minsize': 8, 'mode': 'hide'},\n        )\n\n        return fig\n\n\ncomponent: MyComponent = MyComponent.parse_obj(component_definition)\nresult = component\n",
+        "custom_code": true,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "column",
+          "subtype": "column_stacked",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "stack"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "Age": "sum",
+            "value": "sum"
+          },
+          "params": {
+            "y": "value",
+            "x": "Job category",
+            "color": "Risk"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "Age",
+          "Sex",
+          "Job",
+          "Housing",
+          "Saving accounts",
+          "Checking account",
+          "Credit amount",
+          "Duration",
+          "Purpose",
+          "Age category"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "okj9vey2p1qtby92y44q2i",
+            "labels": {
+              "field": "value",
+              "min_size": 8,
+              "mode": "hide"
+            },
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "4e0e6daf-1f8d-43fd-a2a3-8125dc574b69",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 4,
+      "y": 4,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "area",
+          "subtype": "area_normal",
+          "plotly_import_source": "px",
+          "plotly_code": "area",
+          "chart_params": {},
+          "chart_layout": {},
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "Age": "sum",
+            "value": "sum"
+          },
+          "params": {
+            "y": "value",
+            "x": "Age",
+            "color": "Risk"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "Sex",
+          "Job",
+          "Housing",
+          "Saving accounts",
+          "Checking account",
+          "Credit amount",
+          "Duration",
+          "Purpose",
+          "Age category",
+          "Job category"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "okj9vey2p1qtby92y44q2i",
+            "labels": {},
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "df84c9e8-4c52-416d-bb6d-6f1f154bbfaa",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 8,
+      "y": 0,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "pie",
+          "subtype": "pie_sunburst",
+          "plotly_import_source": "px",
+          "plotly_code": "sunburst",
+          "chart_params": {},
+          "chart_layout": {},
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "Age": "sum",
+            "value": "sum"
+          },
+          "params": {
+            "values": "value",
+            "names": "Risk",
+            "color": "Risk",
+            "path": [
+              "Risk",
+              "Sex"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "Age",
+          "Sex",
+          "Job",
+          "Housing",
+          "Saving accounts",
+          "Checking account",
+          "Credit amount",
+          "Duration",
+          "Purpose",
+          "Age category",
+          "Job category"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "okj9vey2p1qtby92y44q2i",
+            "labels": {},
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "3b83beef-d9b1-4891-9639-d667ea022a9d",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 4,
+      "y": 8,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": "import plotly.express as px\nimport plotly.graph_objects as go\n\nimport pyplan_core.interface.components.core as ppc\nimport pyplan_core.interface.classes as ppcl\nfrom pyplan_core.interface.components.events import BaseEvent\n\n\nclass MyComponent(ppc.Chart):\n    \n    def render(self, df: pd.DataFrame, pivot_properties: dict, event: BaseEvent = None, **kwargs) -> go.Figure:\n        \"\"\"Renders the component and returns a Figure object\n        Visit https://plotly.com/python/plotly-express/ for more information\n        \"\"\"\n        category_orders = {pivot_properties.get('y'): ['little', 'moderate', 'rich', 'no info']} if pivot_properties.get('y') == 'Checking account' else {}\n        # Generate Plotly figure\n        fig = px.bar(\n            df,\n            # Pivot params\n            y=pivot_properties.get('y'),\n            x=pivot_properties.get('x'),\n            color=pivot_properties.get('color'),\n            # Chart params\n            template='simple_white',\n            color_discrete_map={'good': '#93C47D', 'bad': '#EA9999'},\n            text='value',\n            category_orders=category_orders\n        )\n        # Modify traces\n        fig.update_traces(\n            texttemplate='%{text:,.0f}',\n        )\n        # Modify axes\n        fig.update_xaxes(\n            tickformat=',.0f',\n        )\n        fig.update_yaxes(\n            type='category',\n        )\n        # Modify layout\n        fig.update_layout(\n            barmode='stack',\n            uniformtext={'minsize': 8, 'mode': 'hide'},\n        )\n\n        return fig\n\n\ncomponent: MyComponent = MyComponent.parse_obj(component_definition)\nresult = component\n",
+        "custom_code": true,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "bar",
+          "subtype": "bar_stacked",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "stack"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "Age": "sum",
+            "value": "sum"
+          },
+          "params": {
+            "y": "Checking account",
+            "x": "value",
+            "color": "Risk"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "Age",
+          "Sex",
+          "Job",
+          "Housing",
+          "Saving accounts",
+          "Credit amount",
+          "Duration",
+          "Purpose",
+          "Age category",
+          "Job category"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "okj9vey2p1qtby92y44q2i",
+            "labels": {
+              "field": "value",
+              "min_size": 8,
+              "mode": "hide"
+            },
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "1eb4100e-21ea-4d1f-95f8-83129f48fc2d",
+      "namespace": "ppc",
+      "node_id": "a8ae54b33b3314147bd6f491e12db9a2f",
+      "x": 8,
+      "y": 8,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "Risk Distribution",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "bar",
+          "subtype": "bar_stacked",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "stack"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "Age": "sum",
+            "value": "sum"
+          },
+          "params": {
+            "y": "Purpose",
+            "x": "value",
+            "color": "Risk"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "Age",
+          "Sex",
+          "Job",
+          "Housing",
+          "Saving accounts",
+          "Checking account",
+          "Credit amount",
+          "Duration",
+          "Age category",
+          "Job category"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "okj9vey2p1qtby92y44q2i",
+            "labels": {
+              "field": "value",
+              "min_size": 8,
+              "mode": "hide"
+            },
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Data (with new columns and loans)",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    }
+  ]
+}

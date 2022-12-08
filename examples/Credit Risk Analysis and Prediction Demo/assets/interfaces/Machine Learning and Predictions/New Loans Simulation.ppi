@@ -1,0 +1,436 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces/Machine Learning and Predictions",
+  "properties": {
+    "id": "1093167d-ac39-4f77-b0c0-b7beaa971675",
+    "name": "New Loans Simulation",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Form",
+      "component_id": "34fd10c9-dfdd-4661-bce4-319fe3cd1f58",
+      "namespace": "ppc",
+      "node_id": "new_loans",
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 6,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "New Loans",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "age": "sum"
+          },
+          "params": {
+            "rows": [
+              "id"
+            ],
+            "columns": [],
+            "measures": [
+              "age"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {
+          "id": {
+            "readOnly": true
+          },
+          "sex": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "female",
+              "male"
+            ]
+          },
+          "job_category": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "0- unskilled and non-resident",
+              "1- unskilled and resident",
+              "2- skilled",
+              "3- highly skilled"
+            ]
+          },
+          "housing": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "free",
+              "own",
+              "rent"
+            ]
+          },
+          "savings_account": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "little",
+              "moderate",
+              "quite rich",
+              "rich",
+              "no info"
+            ]
+          },
+          "checking_account": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "little",
+              "moderate",
+              "rich",
+              "no info"
+            ]
+          },
+          "purpose": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "business",
+              "car",
+              "domestic appliances",
+              "education",
+              "furniture/equipment",
+              "radio/TV",
+              "repairs",
+              "vacation/others"
+            ]
+          },
+          "rf_prediction": {
+            "readOnly": true,
+            "className": ""
+          },
+          "lr_prediction": {
+            "readOnly": true,
+            "className": ""
+          },
+          "gnb_prediction": {
+            "readOnly": true,
+            "className": ""
+          },
+          "rf_suggested_amount": {
+            "readOnly": true,
+            "className": ""
+          },
+          "lr_suggested_amount": {
+            "readOnly": true,
+            "className": ""
+          },
+          "gnb_suggested_amount": {
+            "readOnly": true,
+            "className": ""
+          },
+          "feedback": {
+            "type": "dropdown",
+            "renderer": "custom_dropdown_renderer",
+            "source": [
+              "good",
+              "bad"
+            ]
+          }
+        },
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": [
+            {
+              "conditions": [
+                {
+                  "condition_type": "column",
+                  "dimension_name": "columns",
+                  "filter_type": "equal",
+                  "values": [
+                    "age",
+                    "credit_amount",
+                    "duration"
+                  ],
+                  "apply_to": "values"
+                }
+              ],
+              "cell_properties": {
+                "style": {},
+                "conditional_format": [],
+                "value_format": {
+                  "type": "number",
+                  "thousands_separator": true,
+                  "decimal_places": 0,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition_type": "column",
+                  "dimension_name": "",
+                  "filter_type": "equal",
+                  "values": [
+                    "rf_prediction",
+                    "lr_prediction",
+                    "gnb_prediction"
+                  ],
+                  "apply_to": "values"
+                }
+              ],
+              "cell_properties": {
+                "style": {
+                  "text-align": "center"
+                },
+                "conditional_format": [
+                  {
+                    "from_": 1.0,
+                    "to": 1.0,
+                    "style": {
+                      "text-align": "none"
+                    },
+                    "shape": {
+                      "icon": {
+                        "prefix": "fad",
+                        "name": "fa-circle-xmark"
+                      },
+                      "color": "#C00000",
+                      "show_icon_only": true
+                    }
+                  },
+                  {
+                    "from_": 0.0,
+                    "to": 0.0,
+                    "style": {},
+                    "shape": {
+                      "icon": {
+                        "prefix": "fad",
+                        "name": "fa-check"
+                      },
+                      "color": "#00B050",
+                      "show_icon_only": true
+                    }
+                  },
+                  {
+                    "from_": -1.0,
+                    "to": -1.0,
+                    "style": {},
+                    "shape": {
+                      "icon": {
+                        "prefix": "fad",
+                        "name": "fa-dash"
+                      },
+                      "show_icon_only": true
+                    }
+                  }
+                ],
+                "value_format": {
+                  "thousands_separator": false,
+                  "prefix": "",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition_type": "column",
+                  "dimension_name": "",
+                  "filter_type": "contains",
+                  "values": [
+                    "suggested_amount"
+                  ],
+                  "apply_to": "values"
+                }
+              ],
+              "cell_properties": {
+                "style": {},
+                "conditional_format": [
+                  {
+                    "from_": -1.0,
+                    "to": -1.0,
+                    "style": {},
+                    "shape": {
+                      "icon": {
+                        "prefix": "fad",
+                        "name": "fa-dash"
+                      },
+                      "show_icon_only": true
+                    }
+                  }
+                ],
+                "value_format": {
+                  "type": "number",
+                  "thousands_separator": true,
+                  "decimal_places": 0,
+                  "prefix": "$ ",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition_type": "column",
+                  "dimension_name": "",
+                  "filter_type": "equal",
+                  "values": [
+                    "credit_amount"
+                  ],
+                  "apply_to": "values"
+                }
+              ],
+              "cell_properties": {
+                "style": {},
+                "conditional_format": [],
+                "value_format": {
+                  "type": "number",
+                  "thousands_separator": true,
+                  "decimal_places": 0,
+                  "prefix": "$ ",
+                  "suffix": "",
+                  "date_format": ""
+                }
+              }
+            }
+          ]
+        },
+        "applied_hierarchies": {},
+        "hide_id_column": true,
+        "n_rows_to_add": 1
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "550543fd-84d6-41d7-8030-481761e14d39",
+      "namespace": "ppc",
+      "node_id": "add_new_loans_to_csv",
+      "x": 0,
+      "y": 6,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Add New Loans to CSV",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "8e2cf952-951a-4f56-919c-933c9cd4fbcf",
+      "namespace": "ppc",
+      "node_id": "a0f360031a45d404cbe36298eb640a3f7",
+      "x": 2,
+      "y": 6,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Delete New Loans From CSV",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "fbee7959-fe41-44d9-9a9a-114bb07a8a7b",
+      "namespace": "ppc",
+      "node_id": "a698a766ffafb4abc95849a9ba6c7f3ad",
+      "x": 4,
+      "y": 6,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Reset New Loans Inputs",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    }
+  ]
+}
