@@ -1,0 +1,522 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Pyplan usage statistics/assets/interfaces",
+  "properties": {
+    "id": "caeaae92-57b4-4a16-9a72-d7304082695d",
+    "name": "User stats",
+    "icon": "fa-duotone fa-chart-user",
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Selector",
+      "component_id": "dd84a445-fac1-43ac-bed0-96f0358b60c6",
+      "namespace": "ppc",
+      "node_id": "logs_time_selector",
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Logs time selector",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "format": "radio",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "d78de106-4c20-4270-959e-3909515cedcb",
+      "namespace": "ppc",
+      "node_id": "logs_apps_used_by_user",
+      "x": 6,
+      "y": 2,
+      "w": 6,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Apps used by the user",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calc_fields": {},
+        "function_calc_fields": {},
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        }
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Selector",
+      "component_id": "57b9d97e-b2ac-4d47-80b6-57a9dadd7797",
+      "namespace": "ppc",
+      "node_id": "logs_user_selector",
+      "x": 6,
+      "y": 0,
+      "w": 6,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Logs user selector",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "format": "default",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "7da64214-cb6a-4753-ad80-291417764e5e",
+      "namespace": "ppc",
+      "node_id": "logs_total_user_sessions",
+      "x": 6,
+      "y": 1,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Total user sessions",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "3cfdd151-f141-4286-bd09-a5f3e347238c",
+      "namespace": "ppc",
+      "node_id": "logs_total_user_calls",
+      "x": 8,
+      "y": 1,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Total user calls",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "471e2fea-af1c-4e92-bb0f-25f2f6c0e10b",
+      "namespace": "ppc",
+      "node_id": "logs_total_user_time",
+      "x": 10,
+      "y": 1,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Total user time",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "20px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "6c7bdb33-0e08-4a23-a13c-e7ebb43c1fac",
+      "namespace": "ppc",
+      "node_id": "logs_usage_by_user",
+      "x": 0,
+      "y": 1,
+      "w": 6,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Calls and sessions by day",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "column",
+          "subtype": "column_normal",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "group"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "calls": "sum",
+            "total time": "sum"
+          },
+          "params": {
+            "y": "calls",
+            "x": "date"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "session_key",
+          "total time"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "",
+            "labels": {},
+            "labels_secondary_axis": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": [],
+        "type": null,
+        "value_format": {
+          "type": null,
+          "thousands_separator": false,
+          "decimal_places": null,
+          "prefix": "",
+          "suffix": "",
+          "date_format": null
+        }
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Calls and sessions by day",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "calls": "sum"
+          },
+          "params": {
+            "rows": [],
+            "columns": [
+              "date"
+            ],
+            "measures": [
+              "calls"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    }
+  ]
+}

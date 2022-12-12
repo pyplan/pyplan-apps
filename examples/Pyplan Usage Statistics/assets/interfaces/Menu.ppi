@@ -1,0 +1,108 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Pyplan usage statistics/assets/interfaces",
+  "properties": {
+    "id": "4f55cfdd-3910-4ee9-946b-e0987f127b69",
+    "name": "Menu",
+    "icon": "fa-duotone fa-list",
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Menu",
+      "component_id": "9457887c-1116-4781-af7b-e3092c3b963c",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 8,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "format": "accordion",
+        "menu": {
+          "items": [
+            {
+              "id": "e9d0aptrxuqkg6z1zj9m7p",
+              "parent": "root",
+              "text": "Menu",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": true
+              }
+            },
+            {
+              "id": "mx45jaqaahhyhw0x5oqsf",
+              "parent": "e9d0aptrxuqkg6z1zj9m7p",
+              "text": "",
+              "droppable": false,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": [
+                  {
+                    "id": "inysi3hvxhjviadclsm1",
+                    "pos": 1,
+                    "action_type": "interface",
+                    "text": "Overview",
+                    "icon": "fa-duotone fa-table-cells-large",
+                    "reference": "69ec18d4-21d2-4d73-9578-87fd4b7a3f6e",
+                    "target": null,
+                    "disabled": null
+                  },
+                  {
+                    "id": "46q7rajje1zknwjp94bo3b",
+                    "pos": 2,
+                    "action_type": "interface",
+                    "text": "User stats",
+                    "icon": "fa-duotone fa-chart-user",
+                    "reference": "caeaae92-57b4-4a16-9a72-d7304082695d",
+                    "target": null,
+                    "disabled": null
+                  },
+                  {
+                    "id": "f00r8zzilvvyovwe9wlr9g",
+                    "pos": 3,
+                    "action_type": "interface",
+                    "text": "Application stats",
+                    "icon": "fa-duotone fa-desktop",
+                    "reference": "9f3baf91-d3b5-45a6-9307-5c7add7aa42e",
+                    "target": null,
+                    "disabled": null
+                  }
+                ],
+                "open_at_startup": null
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

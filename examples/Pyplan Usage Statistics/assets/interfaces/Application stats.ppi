@@ -1,0 +1,472 @@
+{
+  "uri": "/data/models/pyplan/Public/Examples/Pyplan usage statistics/assets/interfaces",
+  "properties": {
+    "id": "9f3baf91-d3b5-45a6-9307-5c7add7aa42e",
+    "name": "Application stats",
+    "icon": "fa-duotone fa-desktop",
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Selector",
+      "component_id": "5bc8eb88-da0e-4c82-a55e-30202e0c50dc",
+      "namespace": "ppc",
+      "node_id": "logs_time_selector",
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Logs time selector",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "format": "radio",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    },
+    {
+      "component_type": "core.Selector",
+      "component_id": "ecabb7af-21af-4fef-b77d-75da0751aaa3",
+      "namespace": "ppc",
+      "node_id": "logs_app_selector",
+      "x": 6,
+      "y": 0,
+      "w": 6,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Logs app selector",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "format": "default",
+        "orientation": "horizontal",
+        "page_size": 25
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "fef5471c-dba8-442e-bb3f-f3df69eb666a",
+      "namespace": "ppc",
+      "node_id": "logs_calls_by_user",
+      "x": 6,
+      "y": 1,
+      "w": 3,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Calls by user",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "calls": "sum"
+          },
+          "params": {
+            "rows": [
+              "user"
+            ],
+            "columns": [],
+            "measures": [
+              "calls"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "f0feb1fa-a963-493d-8fb8-8af518751ff3",
+      "namespace": "ppc",
+      "node_id": "logs_app_change_log",
+      "x": 0,
+      "y": 6,
+      "w": 12,
+      "h": 6,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "App change log",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Chart",
+      "component_id": "4bc1e55b-6663-48c1-8b2e-274e2a5d1520",
+      "namespace": "ppc",
+      "node_id": "logs_app_calls_sessions_by_day",
+      "x": 0,
+      "y": 1,
+      "w": 6,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Calls and sessions by day",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "chart_type": {
+          "main_type": "column",
+          "subtype": "column_stacked",
+          "plotly_import_source": "px",
+          "plotly_code": "bar",
+          "chart_params": {},
+          "chart_layout": {
+            "barmode": "stack"
+          },
+          "chart_update_traces": {}
+        },
+        "chart_properties": {
+          "template": "simple_white"
+        },
+        "chart_layout": {},
+        "selected_event": false,
+        "hover_event": false,
+        "hover_select_targets": [],
+        "drilldown_event": true,
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "calls": "sum"
+          },
+          "params": {
+            "y": "calls",
+            "x": "date",
+            "color": "user"
+          }
+        },
+        "page_size": {
+          "rows": 1000,
+          "columns": 1000
+        },
+        "hide_empty_data": false,
+        "drilldowns": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "available_drilldown_indexes": [
+          "session_key"
+        ],
+        "supported_types_for_drilldown": [
+          "column",
+          "bar",
+          "line",
+          "area",
+          "pie"
+        ],
+        "styles": {
+          "all": {
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "value_format_secondary_axis": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            },
+            "color_discrete_sequence": "",
+            "color_continuous_scale": "",
+            "custom_series_colors_name": "",
+            "labels": {},
+            "labels_secondary_axis": {},
+            "conditional_format": [],
+            "style": {}
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "calculated_fields": []
+      },
+      "filters": {},
+      "alternative_properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Calls by day",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {
+            "calls": "sum"
+          },
+          "params": {
+            "rows": [
+              "user"
+            ],
+            "columns": [
+              "date"
+            ],
+            "measures": [
+              "calls"
+            ]
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "d186eed4-e6c7-4ac6-9b05-76e757ef4501",
+      "namespace": "ppc",
+      "node_id": "logs_app_updated_by",
+      "x": 9,
+      "y": 1,
+      "w": 3,
+      "h": 5,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Updated by",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    }
+  ]
+}
