@@ -1,0 +1,49 @@
+{
+  "uri": "/data/models/pyplan/Public/Upload and download files/versions/Default/assets/interfaces",
+  "properties": {
+    "id": "1d062429-9ace-444d-8dca-380d11212ffa",
+    "name": "otra  vacia",
+    "icon": null,
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Html",
+      "component_id": "f812b1a9-a558-41ba-bf21-f0818879223e",
+      "namespace": "ppc",
+      "node_id": null,
+      "x": 3,
+      "y": 0,
+      "w": 6,
+      "h": 3,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true,
+        "html": "<p>adasdsada</p>"
+      }
+    }
+  ]
+}

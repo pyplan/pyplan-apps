@@ -1,0 +1,1160 @@
+{
+  "uri": "/data/models/pyplan/Public/Upload and download files/versions/Default/assets/interfaces",
+  "properties": {
+    "id": "2de0be24-7b94-4e5a-9494-457f495ff1d0",
+    "name": "Demo download",
+    "icon": "fa-duotone fa-earth",
+    "code": null,
+    "grid": {
+      "breakpoints": {
+        "lg": 640,
+        "xxs": 0
+      },
+      "cols": {
+        "lg": 12,
+        "xxs": 1
+      },
+      "rowHeight": 70
+    },
+    "documentation": null
+  },
+  "definition": [
+    {
+      "component_type": "core.Button",
+      "component_id": "e6ab2f12-2aa6-4e0d-9bc6-b9d3f42747b3",
+      "namespace": "ppc",
+      "node_id": "download_relative",
+      "x": 0,
+      "y": 0,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download relative",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "00f1c3af-01da-43fa-a73b-6c36f6265b9f",
+      "namespace": "ppc",
+      "node_id": "download_absolute",
+      "x": 0,
+      "y": 1,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download absolute",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "52bc9fc2-648b-4932-b02e-e7913b1acd0e",
+      "namespace": "ppc",
+      "node_id": "download_from_team",
+      "x": 0,
+      "y": 2,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download from Team",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "b79bc2f9-7b4a-4750-b371-de1a878e291e",
+      "namespace": "ppc",
+      "node_id": "download_denied_folder",
+      "x": 0,
+      "y": 3,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download denied folder",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "1d68c6e1-e22a-482b-b632-28b6975772c8",
+      "namespace": "ppc",
+      "node_id": "download_from_temp",
+      "x": 0,
+      "y": 6,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download from tmp",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "ade38618-c769-4358-adf2-54023796bbe8",
+      "namespace": "ppc",
+      "node_id": "node1",
+      "x": 2,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node1",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "846f69ce-1a47-453d-a46e-6d0ae68d4517",
+      "namespace": "ppc",
+      "node_id": "node2",
+      "x": 2,
+      "y": 1,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node2",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "99e14db9-5296-4ebe-9a7f-ddb97521e28c",
+      "namespace": "ppc",
+      "node_id": "node3",
+      "x": 2,
+      "y": 2,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node3",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "0c49764d-02bf-432b-866b-b03f17b21cce",
+      "namespace": "ppc",
+      "node_id": "node4",
+      "x": 2,
+      "y": 3,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node4",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Generic",
+      "component_id": "df7dd14a-670c-4b3d-bac9-0a84be7fac33",
+      "namespace": "ppc",
+      "node_id": "node5",
+      "x": 2,
+      "y": 6,
+      "w": 4,
+      "h": 4,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node5",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "a8973239-a901-4725-a5d0-a105ef9339a4",
+      "namespace": "ppc",
+      "node_id": "download_big_file",
+      "x": 0,
+      "y": 5,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download big file",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "bacf9545-88ee-4ccc-b328-77d810e95a4f",
+      "namespace": "ppc",
+      "node_id": "node6",
+      "x": 2,
+      "y": 5,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node6",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "588921b7-6350-471e-853e-3b7b7e4089b5",
+      "namespace": "ppc",
+      "node_id": "download_zip_folder",
+      "x": 0,
+      "y": 4,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Download zip folder",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "339bfbc7-ef2b-42e0-95a0-560eaf467db9",
+      "namespace": "ppc",
+      "node_id": "node7",
+      "x": 2,
+      "y": 4,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node7",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "c5882cd8-e3e2-4282-906e-8dffd0f8a882",
+      "namespace": "ppc",
+      "node_id": "upload_relative",
+      "x": 6,
+      "y": 0,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload relative",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "62d34e18-baad-4e11-aa13-8ab0d378e89b",
+      "namespace": "ppc",
+      "node_id": "upload_absolute",
+      "x": 6,
+      "y": 1,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload absolute",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "05c1fe3d-8ba1-4541-be07-19226df8cf7c",
+      "namespace": "ppc",
+      "node_id": "upload_extensions",
+      "x": 6,
+      "y": 2,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload only xls",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "c248d473-d865-4b19-ae9e-117774fecfa9",
+      "namespace": "ppc",
+      "node_id": "node8",
+      "x": 8,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node8",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "c25174c1-e0c3-4e02-b1ab-38e8e0cf3af8",
+      "namespace": "ppc",
+      "node_id": "node9",
+      "x": 8,
+      "y": 1,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node9",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "976c85f0-cebe-4538-889b-267af37d5fb0",
+      "namespace": "ppc",
+      "node_id": "node10",
+      "x": 8,
+      "y": 2,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node10",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "a6c042ef-b5c4-4857-8bb5-687114ab6a1e",
+      "namespace": "ppc",
+      "node_id": "upload_tmp",
+      "x": 6,
+      "y": 3,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload to tmp",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "812a1a5f-aeb2-41d3-8cae-5d077c020475",
+      "namespace": "ppc",
+      "node_id": "upload_with_validation_function",
+      "x": 6,
+      "y": 4,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload validation function",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "8ede23f9-640a-4b46-9010-524c55bc5394",
+      "namespace": "ppc",
+      "node_id": "upload_callback",
+      "x": 6,
+      "y": 5,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload callback",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Button",
+      "component_id": "732a8e90-9d12-46db-8d02-b4ab7fd41c21",
+      "namespace": "ppc",
+      "node_id": "upload_with_invalidate",
+      "x": 6,
+      "y": 6,
+      "w": 2,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Upload with invalidate",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": true
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "786f0b3e-5a11-43d3-a607-48150069cd19",
+      "namespace": "ppc",
+      "node_id": "files_in_data",
+      "x": 6,
+      "y": 7,
+      "w": 6,
+      "h": 3,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Files in data",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "unlink": [],
+        "pivot": {
+          "agg": {},
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "bottom_total": false,
+        "hide_empty_data": "",
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {}
+      },
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "d386a64d-b73f-4feb-a319-3b6ed0c97d4c",
+      "namespace": "ppc",
+      "node_id": "node11",
+      "x": 8,
+      "y": 3,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node11",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "5f98fdee-5723-4d85-b60f-30bb06da2d6c",
+      "namespace": "ppc",
+      "node_id": "node12",
+      "x": 8,
+      "y": 4,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node12",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "fa0bd0e6-f8f0-4c8f-93ba-5762eadb628e",
+      "namespace": "ppc",
+      "node_id": "node14",
+      "x": 8,
+      "y": 5,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node14",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "3d77ad70-f8b6-49e2-a974-706fa578de2a",
+      "namespace": "ppc",
+      "node_id": "node16",
+      "x": 8,
+      "y": 6,
+      "w": 4,
+      "h": 1,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": false,
+          "text": "node16",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": ""
+        },
+        "hide_header": true,
+        "hide_border": null,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "unlink": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false,
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "left"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 2,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        }
+      },
+      "filters": {},
+      "alternative_properties": null
+    }
+  ]
+}
