@@ -1,9 +1,9 @@
 {
   "modelProp": {
-    "title": "Pyplan usage statistics model"
+    "title": "Pyplan Usage Statistics"
   },
   "appProperties": {
-    "id": "664bea44-bccb-4a14-81a1-9a2ad447270e",
+    "id": "pyplan-usage-statistics",
     "defaultInterface": "4f55cfdd-3910-4ee9-946b-e0987f127b69",
     "defaultInterfaceByDepartment": [],
     "description": null,

@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/Public/Examples/Pyplan usage statistics/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Pyplan Usage Statistics para Github/versions/Default/assets/interfaces",
   "properties": {
     "id": "4f55cfdd-3910-4ee9-946b-e0987f127b69",
     "name": "Menu",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {

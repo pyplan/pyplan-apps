@@ -1,0 +1,19 @@
+{
+  "id": "4d8d2a29-d433-4d05-9c89-09ea6ae35f42",
+  "status": "active",
+  "labels": [],
+  "description": null,
+  "description_translations": null,
+  "versionDescription": null,
+  "customSeriesColors": [],
+  "defaultInterface": "4f55cfdd-3910-4ee9-946b-e0987f127b69",
+  "defaultInterfaceByDepartment": [],
+  "creationDate": "2025-01-03 16:06:48",
+  "closingDate": "",
+  "archiveDate": "",
+  "creatorId": "afab9eea-2ba1-4fce-9343-ee721de355c9",
+  "creatorFullName": "Lucas Lascano",
+  "selectedScenarios": [],
+  "scenarioTemplates": [],
+  "customDiscreteSequenceColorPalettes": []
+}
