@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/Public/Examples/Pyplan usage statistics/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Pyplan Usage Statistics para Github/versions/Default/assets/interfaces",
   "properties": {
     "id": "caeaae92-57b4-4a16-9a72-d7304082695d",
     "name": "User stats",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {
@@ -27,7 +32,9 @@
       "x": 0,
       "y": 0,
       "w": 6,
-      "h": 1,
+      "h": 2,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -38,14 +45,48 @@
           "text": "Logs time selector",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "format": "radio",
         "orientation": "horizontal",
-        "page_size": 25
-      }
+        "page_size": 25,
+        "range_hide_min_max_labels": true
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ]
     },
     {
       "component_type": "core.Table",
@@ -55,7 +96,9 @@
       "x": 6,
       "y": 2,
       "w": 6,
-      "h": 4,
+      "h": 9,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -66,10 +109,16 @@
           "text": "Apps used by the user",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": false,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
@@ -77,7 +126,7 @@
           "rowHeaders": false
         },
         "calculated_fields": [],
-        "unlink": [],
+        "calculated_items": [],
         "pivot": {
           "agg": {},
           "params": {
@@ -94,10 +143,10 @@
         "renderers": {},
         "columns": {},
         "right_total": false,
+        "right_total_position": "end",
         "bottom_total": false,
+        "bottom_total_position": "end",
         "hide_empty_data": "",
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "drilldowns": [],
         "styles": {
           "all": {
@@ -115,7 +164,22 @@
           "custom": []
         },
         "applied_hierarchies": {},
+        "scenarios": {
+          "compare": false,
+          "calculations": [
+            {
+              "calculation_type": "Values",
+              "end_text": ""
+            }
+          ]
+        },
+        "show_column_filter_icon": false,
+        "hide_footer": false,
+        "unlinked_indexes": [],
+        "processing_engine": "default",
         "calc_fields": {},
+        "show_filter_toolbar": false,
+        "show_pivot_toolbar": false,
         "function_calc_fields": {},
         "value_format": {
           "type": null,
@@ -126,6 +190,33 @@
           "date_format": null
         }
       },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ],
       "alternative_properties": null,
       "filters": {},
       "cell_properties": null
@@ -139,6 +230,8 @@
       "y": 0,
       "w": 6,
       "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -149,14 +242,48 @@
           "text": "Logs user selector",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "format": "default",
         "orientation": "horizontal",
-        "page_size": 25
-      }
+        "page_size": 25,
+        "range_hide_min_max_labels": true
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ]
     },
     {
       "component_type": "core.Indicator",
@@ -167,6 +294,8 @@
       "y": 1,
       "w": 2,
       "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -177,17 +306,20 @@
           "text": "Total user sessions",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "pivot": {
           "agg": {},
           "params": {}
         },
-        "unlink": [],
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "shape": null,
         "styles": {
           "all": {
@@ -208,6 +340,10 @@
           },
           "custom": []
         },
+        "unlinked_indexes": [],
+        "processing_engine": "default",
+        "show_filter_toolbar": false,
+        "show_pivot_toolbar": false,
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -217,6 +353,33 @@
           "date_format": null
         }
       },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ],
       "filters": {},
       "alternative_properties": null
     },
@@ -229,6 +392,8 @@
       "y": 1,
       "w": 2,
       "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -239,17 +404,20 @@
           "text": "Total user calls",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "pivot": {
           "agg": {},
           "params": {}
         },
-        "unlink": [],
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "shape": null,
         "styles": {
           "all": {
@@ -270,6 +438,10 @@
           },
           "custom": []
         },
+        "unlinked_indexes": [],
+        "processing_engine": "default",
+        "show_filter_toolbar": false,
+        "show_pivot_toolbar": false,
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -279,6 +451,33 @@
           "date_format": null
         }
       },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ],
       "filters": {},
       "alternative_properties": null
     },
@@ -291,6 +490,8 @@
       "y": 1,
       "w": 2,
       "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -301,17 +502,20 @@
           "text": "Total user time",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "pivot": {
           "agg": {},
           "params": {}
         },
-        "unlink": [],
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "shape": null,
         "styles": {
           "all": {
@@ -332,6 +536,10 @@
           },
           "custom": []
         },
+        "unlinked_indexes": [],
+        "processing_engine": "default",
+        "show_filter_toolbar": false,
+        "show_pivot_toolbar": false,
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -341,6 +549,33 @@
           "date_format": null
         }
       },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ],
       "filters": {},
       "alternative_properties": null
     },
@@ -350,9 +585,11 @@
       "namespace": "ppc",
       "node_id": "logs_usage_by_user",
       "x": 0,
-      "y": 1,
+      "y": 2,
       "w": 6,
-      "h": 5,
+      "h": 9,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -363,10 +600,16 @@
           "text": "Calls and sessions by day",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": false,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "chart_type": {
           "main_type": "column",
           "subtype": "column_normal",
@@ -386,7 +629,6 @@
         "hover_event": false,
         "hover_select_targets": [],
         "drilldown_event": true,
-        "unlink": [],
         "pivot": {
           "agg": {
             "calls": "sum",
@@ -403,8 +645,6 @@
         },
         "hide_empty_data": false,
         "drilldowns": [],
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "available_drilldown_indexes": [
           "session_key",
           "total time"
@@ -432,17 +672,36 @@
               "suffix": "",
               "date_format": ""
             },
-            "color_discrete_sequence": "",
+            "color_discrete_sequence": "#pyplan_default#",
             "color_continuous_scale": "",
             "custom_series_colors_name": "",
             "labels": {},
-            "labels_secondary_axis": {}
+            "labels_secondary_axis": {},
+            "y_axis_range": {},
+            "combined_primary_axis_color": "",
+            "combined_secondary_axis_color": "",
+            "show_y_axis_title": true,
+            "show_x_axis_title": true
           },
           "custom": []
         },
         "applied_hierarchies": {},
         "calculated_fields": [],
-        "type": null,
+        "calculated_items": [],
+        "scenarios": {
+          "compare": false,
+          "calculations": [
+            {
+              "calculation_type": "Values",
+              "end_text": ""
+            }
+          ]
+        },
+        "sort": {},
+        "unlinked_indexes": [],
+        "processing_engine": "default",
+        "show_filter_toolbar": false,
+        "show_pivot_toolbar": false,
         "value_format": {
           "type": null,
           "thousands_separator": false,
@@ -450,8 +709,36 @@
           "prefix": "",
           "suffix": "",
           "date_format": null
-        }
+        },
+        "type": null
       },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:09:46"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:09:46"
+        }
+      ],
       "filters": {},
       "alternative_properties": {
         "code": null,
@@ -461,10 +748,16 @@
           "text": "Calls and sessions by day",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": false,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
@@ -472,7 +765,7 @@
           "rowHeaders": false
         },
         "calculated_fields": [],
-        "unlink": [],
+        "calculated_items": [],
         "pivot": {
           "agg": {
             "calls": "sum"
@@ -495,10 +788,10 @@
         "renderers": {},
         "columns": {},
         "right_total": false,
+        "right_total_position": "end",
         "bottom_total": false,
+        "bottom_total_position": "end",
         "hide_empty_data": "",
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "drilldowns": [],
         "styles": {
           "all": {
@@ -515,7 +808,23 @@
           },
           "custom": []
         },
-        "applied_hierarchies": {}
+        "applied_hierarchies": {},
+        "scenarios": {
+          "compare": false,
+          "calculations": [
+            {
+              "calculation_type": "Values",
+              "end_text": ""
+            }
+          ]
+        },
+        "show_column_filter_icon": false,
+        "hide_footer": false,
+        "unlinked_indexes": [],
+        "processing_engine": "default",
+        "show_filter_toolbar": false,
+        "show_pivot_toolbar": false,
+        "unlink": []
       }
     }
   ]
