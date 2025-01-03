@@ -1,18 +1,22 @@
 {
-  "uri": "/data/models/pyplan/llascano/Pyplan Usage Statistics para Github/versions/Default/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Pyplan Usage Statistics v2/versions/Default/assets/interfaces",
   "properties": {
-    "id": "4f55cfdd-3910-4ee9-946b-e0987f127b69",
+    "id": "f19bcd93-5dc2-4a4b-8889-46996edcdb27",
     "name": "Menu",
-    "icon": "fa-duotone fa-list",
+    "icon": null,
     "code": null,
     "grid": {
       "breakpoints": {
-        "lg": 640,
-        "xxs": 0
+        "lg": 1200,
+        "md": 900,
+        "sm": 600,
+        "xs": 0
       },
       "cols": {
         "lg": 12,
-        "xxs": 1
+        "md": 12,
+        "sm": 12,
+        "xs": 12
       },
       "rowHeight": 70
     },
@@ -26,13 +30,15 @@
   "definition": [
     {
       "component_type": "core.Menu",
-      "component_id": "9457887c-1116-4781-af7b-e3092c3b963c",
+      "component_id": "38b6712b-54f1-4de2-ad12-143bc18a2c02",
       "namespace": "ppc",
       "node_id": null,
       "x": 0,
       "y": 0,
       "w": 12,
-      "h": 8,
+      "h": 7,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -43,15 +49,21 @@
           "text": "",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": true,
         "hide_border": true,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
         "format": "accordion",
         "menu": {
           "items": [
             {
-              "id": "e9d0aptrxuqkg6z1zj9m7p",
+              "id": "cid8zz35dckhawsa25trzs",
               "parent": "root",
               "text": "Menu",
               "droppable": true,
@@ -59,12 +71,14 @@
                 "pos": null,
                 "icon": null,
                 "actions": null,
-                "open_at_startup": true
+                "open_at_startup": true,
+                "subtitle": null,
+                "translations": null
               }
             },
             {
-              "id": "mx45jaqaahhyhw0x5oqsf",
-              "parent": "e9d0aptrxuqkg6z1zj9m7p",
+              "id": "tqb2hivgcar84x0oga6bs2",
+              "parent": "cid8zz35dckhawsa25trzs",
               "text": "",
               "droppable": false,
               "data": {
@@ -72,42 +86,107 @@
                 "icon": null,
                 "actions": [
                   {
-                    "id": "inysi3hvxhjviadclsm1",
+                    "id": "j9tcuilr3br11rwrdu075l",
                     "pos": 1,
                     "action_type": "interface",
                     "text": "Overview",
-                    "icon": "fa-duotone fa-table-cells-large",
-                    "reference": "69ec18d4-21d2-4d73-9578-87fd4b7a3f6e",
+                    "icon": null,
+                    "reference": "3c451d5f-27b8-4fe3-97b1-68cc4906fc9b",
                     "target": null,
-                    "disabled": null
+                    "disabled": false,
+                    "subtitle": null,
+                    "translations": {
+                      "text": {},
+                      "subtitle": null
+                    }
                   },
                   {
-                    "id": "46q7rajje1zknwjp94bo3b",
+                    "id": "xdohenylpq85c4z7sf9mzx",
                     "pos": 2,
                     "action_type": "interface",
                     "text": "User stats",
                     "icon": "fa-duotone fa-chart-user",
                     "reference": "caeaae92-57b4-4a16-9a72-d7304082695d",
                     "target": null,
-                    "disabled": null
+                    "disabled": false,
+                    "subtitle": null,
+                    "translations": {
+                      "text": {},
+                      "subtitle": null
+                    }
                   },
                   {
-                    "id": "f00r8zzilvvyovwe9wlr9g",
+                    "id": "5g3gtpx9kar1qwuz1bkbof",
                     "pos": 3,
                     "action_type": "interface",
                     "text": "Application stats",
                     "icon": "fa-duotone fa-desktop",
                     "reference": "9f3baf91-d3b5-45a6-9307-5c7add7aa42e",
                     "target": null,
-                    "disabled": null
+                    "disabled": false,
+                    "subtitle": null,
+                    "translations": {
+                      "text": {},
+                      "subtitle": null
+                    }
                   }
                 ],
-                "open_at_startup": null
+                "open_at_startup": null,
+                "subtitle": null,
+                "translations": null
+              }
+            },
+            {
+              "id": "root",
+              "parent": "main_root",
+              "text": "Ra\u00edz",
+              "droppable": true,
+              "data": {
+                "pos": null,
+                "icon": null,
+                "actions": null,
+                "open_at_startup": null,
+                "subtitle": null,
+                "translations": null
               }
             }
           ]
+        },
+        "items_per_row": 4,
+        "align_items": "center",
+        "auto_open_single_action": false,
+        "text_color": null,
+        "icon_color": null,
+        "background_color": null,
+        "hover_color": null
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 17:02:41"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 17:02:41"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 17:02:41"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 17:02:41"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 17:02:41"
         }
-      }
+      ]
     }
   ]
 }
