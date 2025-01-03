@@ -1,18 +1,22 @@
 {
   "uri": "/data/models/pyplan/llascano/Pyplan Usage Statistics v2/versions/Default/assets/interfaces",
   "properties": {
-    "id": "caeaae92-57b4-4a16-9a72-d7304082695d",
-    "name": "User stats",
-    "icon": "fa-duotone fa-chart-user",
+    "id": "3c451d5f-27b8-4fe3-97b1-68cc4906fc9b",
+    "name": "Overview",
+    "icon": null,
     "code": null,
     "grid": {
       "breakpoints": {
-        "lg": 640,
-        "xxs": 0
+        "lg": 1200,
+        "md": 900,
+        "sm": 600,
+        "xs": 0
       },
       "cols": {
         "lg": 12,
-        "xxs": 1
+        "md": 12,
+        "sm": 12,
+        "xs": 12
       },
       "rowHeight": 70
     },
@@ -26,13 +30,13 @@
   "definition": [
     {
       "component_type": "core.Selector",
-      "component_id": "dd84a445-fac1-43ac-bed0-96f0358b60c6",
+      "component_id": "effab064-0a3b-4d68-8950-d9c6c5ebc982",
       "namespace": "ppc",
       "node_id": "logs_time_selector",
       "x": 0,
       "y": 0,
-      "w": 6,
-      "h": 2,
+      "w": 12,
+      "h": 1,
       "isDraggable": true,
       "isResizable": true,
       "error_code": null,
@@ -55,7 +59,7 @@
         "header_color": null,
         "header_background_color": null,
         "show_data_handling_area": false,
-        "format": "radio",
+        "format": "default",
         "orientation": "horizontal",
         "page_size": 25,
         "range_hide_min_max_labels": true
@@ -64,39 +68,39 @@
         {
           "id": 1,
           "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:28:41"
         },
         {
           "id": 2,
           "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:28:41"
         },
         {
           "id": 3,
           "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:28:41"
         },
         {
           "id": 4,
           "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:28:41"
         },
         {
           "id": 5,
           "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:28:41"
         }
       ]
     },
     {
-      "component_type": "core.Table",
-      "component_id": "d78de106-4c20-4270-959e-3909515cedcb",
+      "component_type": "core.Indicator",
+      "component_id": "fa724d1a-ef70-44eb-863a-52b1d99dc06d",
       "namespace": "ppc",
-      "node_id": "logs_apps_used_by_user",
-      "x": 6,
-      "y": 2,
-      "w": 6,
-      "h": 9,
+      "node_id": "logs_total_users",
+      "x": 0,
+      "y": 1,
+      "w": 3,
+      "h": 1,
       "isDraggable": true,
       "isResizable": true,
       "error_code": null,
@@ -106,7 +110,7 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Apps used by the user",
+          "text": "Total users",
           "custom_text": "",
           "show_units": true,
           "units_text": "",
@@ -114,43 +118,281 @@
         },
         "hide_header": null,
         "hide_border": null,
-        "hide_maximize_button": false,
+        "hide_maximize_button": true,
         "hide_data_handling_icon": null,
         "header_color": null,
         "header_background_color": null,
         "show_data_handling_area": false,
-        "table_properties": {
-          "colHeaders": true,
-          "manualColumnResize": true,
-          "multiColumnSorting": true,
-          "rowHeaders": false
-        },
-        "calculated_fields": [],
-        "calculated_items": [],
         "pivot": {
           "agg": {},
-          "params": {
-            "rows": [],
-            "columns": [],
-            "measures": []
-          }
+          "params": {}
         },
-        "page_size": {
-          "rows": 100,
-          "columns": 500
-        },
-        "sort": {},
-        "renderers": {},
-        "columns": {},
-        "right_total": false,
-        "right_total_position": "end",
-        "bottom_total": false,
-        "bottom_total_position": "end",
-        "hide_empty_data": "",
-        "drilldowns": [],
+        "shape": null,
         "styles": {
           "all": {
-            "style": {},
+            "style": {
+              "font-size": "16px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "unlinked_indexes": [],
+        "processing_engine": "default"
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:30:06"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:30:06"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:30:06"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:30:06"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:30:06"
+        }
+      ],
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "071677e2-bb3f-440b-a5b5-16e8cd0fb061",
+      "namespace": "ppc",
+      "node_id": "logs_total_sessions",
+      "x": 3,
+      "y": 1,
+      "w": 3,
+      "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Total sessions",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "",
+          "translations": {}
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "unlinked_indexes": [],
+        "processing_engine": "default"
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:30:32"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:30:32"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:30:32"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:30:32"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:30:32"
+        }
+      ],
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "97c7e237-ea62-4294-8a02-d0492f23a75b",
+      "namespace": "ppc",
+      "node_id": "logs_total_calls",
+      "x": 6,
+      "y": 1,
+      "w": 3,
+      "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Total calls",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "",
+          "translations": {}
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
+            "conditional_format": [],
+            "value_format": {
+              "thousands_separator": false,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "unlinked_indexes": [],
+        "processing_engine": "default"
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 16:30:49"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 16:30:49"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 16:30:49"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 16:30:49"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 16:30:49"
+        }
+      ],
+      "filters": {},
+      "alternative_properties": null
+    },
+    {
+      "component_type": "core.Indicator",
+      "component_id": "bff1cdcd-5ef0-48ab-9224-8353033067ad",
+      "namespace": "ppc",
+      "node_id": "logs_average_session_time",
+      "x": 9,
+      "y": 1,
+      "w": 3,
+      "h": 1,
+      "isDraggable": true,
+      "isResizable": true,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Average session time",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "minutes",
+          "translations": {}
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "hide_maximize_button": true,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
+        "pivot": {
+          "agg": {},
+          "params": {}
+        },
+        "shape": null,
+        "styles": {
+          "all": {
+            "style": {
+              "font-size": "16px",
+              "text-align": "center",
+              "font-weight": "bold"
+            },
             "conditional_format": [],
             "value_format": {
               "type": "number",
@@ -163,417 +405,34 @@
           },
           "custom": []
         },
-        "applied_hierarchies": {},
-        "scenarios": {
-          "compare": false,
-          "calculations": [
-            {
-              "calculation_type": "Values",
-              "end_text": ""
-            }
-          ]
-        },
-        "show_column_filter_icon": false,
-        "hide_footer": false,
         "unlinked_indexes": [],
-        "processing_engine": "default",
-        "calc_fields": {},
-        "show_filter_toolbar": false,
-        "show_pivot_toolbar": false,
-        "function_calc_fields": {},
-        "value_format": {
-          "type": null,
-          "thousands_separator": false,
-          "decimal_places": null,
-          "prefix": "",
-          "suffix": "",
-          "date_format": null
-        }
+        "processing_engine": "default"
       },
       "applied_migrations": [
         {
           "id": 1,
           "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:30:59"
         },
         {
           "id": 2,
           "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:30:59"
         },
         {
           "id": 3,
           "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:30:59"
         },
         {
           "id": 4,
           "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:30:59"
         },
         {
           "id": 5,
           "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
-        }
-      ],
-      "alternative_properties": null,
-      "filters": {},
-      "cell_properties": null
-    },
-    {
-      "component_type": "core.Selector",
-      "component_id": "57b9d97e-b2ac-4d47-80b6-57a9dadd7797",
-      "namespace": "ppc",
-      "node_id": "logs_user_selector",
-      "x": 6,
-      "y": 0,
-      "w": 6,
-      "h": 1,
-      "isDraggable": true,
-      "isResizable": true,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Logs user selector",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": "",
-          "translations": {}
-        },
-        "hide_header": null,
-        "hide_border": null,
-        "hide_maximize_button": true,
-        "hide_data_handling_icon": null,
-        "header_color": null,
-        "header_background_color": null,
-        "show_data_handling_area": false,
-        "format": "default",
-        "orientation": "horizontal",
-        "page_size": 25,
-        "range_hide_min_max_labels": true
-      },
-      "applied_migrations": [
-        {
-          "id": 1,
-          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 2,
-          "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 3,
-          "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 4,
-          "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 5,
-          "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
-        }
-      ]
-    },
-    {
-      "component_type": "core.Indicator",
-      "component_id": "7da64214-cb6a-4753-ad80-291417764e5e",
-      "namespace": "ppc",
-      "node_id": "logs_total_user_sessions",
-      "x": 6,
-      "y": 1,
-      "w": 2,
-      "h": 1,
-      "isDraggable": true,
-      "isResizable": true,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Total user sessions",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": "",
-          "translations": {}
-        },
-        "hide_header": null,
-        "hide_border": null,
-        "hide_maximize_button": true,
-        "hide_data_handling_icon": null,
-        "header_color": null,
-        "header_background_color": null,
-        "show_data_handling_area": false,
-        "pivot": {
-          "agg": {},
-          "params": {}
-        },
-        "shape": null,
-        "styles": {
-          "all": {
-            "style": {
-              "font-size": "20px",
-              "text-align": "center",
-              "font-weight": "bold"
-            },
-            "conditional_format": [],
-            "value_format": {
-              "type": "number",
-              "thousands_separator": true,
-              "decimal_places": 0,
-              "prefix": "",
-              "suffix": "",
-              "date_format": ""
-            }
-          },
-          "custom": []
-        },
-        "unlinked_indexes": [],
-        "processing_engine": "default",
-        "show_filter_toolbar": false,
-        "show_pivot_toolbar": false,
-        "value_format": {
-          "type": null,
-          "thousands_separator": false,
-          "decimal_places": null,
-          "prefix": "",
-          "suffix": "",
-          "date_format": null
-        }
-      },
-      "applied_migrations": [
-        {
-          "id": 1,
-          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 2,
-          "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 3,
-          "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 4,
-          "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 5,
-          "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
-        }
-      ],
-      "filters": {},
-      "alternative_properties": null
-    },
-    {
-      "component_type": "core.Indicator",
-      "component_id": "3cfdd151-f141-4286-bd09-a5f3e347238c",
-      "namespace": "ppc",
-      "node_id": "logs_total_user_calls",
-      "x": 8,
-      "y": 1,
-      "w": 2,
-      "h": 1,
-      "isDraggable": true,
-      "isResizable": true,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Total user calls",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": "",
-          "translations": {}
-        },
-        "hide_header": null,
-        "hide_border": null,
-        "hide_maximize_button": true,
-        "hide_data_handling_icon": null,
-        "header_color": null,
-        "header_background_color": null,
-        "show_data_handling_area": false,
-        "pivot": {
-          "agg": {},
-          "params": {}
-        },
-        "shape": null,
-        "styles": {
-          "all": {
-            "style": {
-              "font-size": "20px",
-              "text-align": "center",
-              "font-weight": "bold"
-            },
-            "conditional_format": [],
-            "value_format": {
-              "type": "number",
-              "thousands_separator": true,
-              "decimal_places": 0,
-              "prefix": "",
-              "suffix": "",
-              "date_format": ""
-            }
-          },
-          "custom": []
-        },
-        "unlinked_indexes": [],
-        "processing_engine": "default",
-        "show_filter_toolbar": false,
-        "show_pivot_toolbar": false,
-        "value_format": {
-          "type": null,
-          "thousands_separator": false,
-          "decimal_places": null,
-          "prefix": "",
-          "suffix": "",
-          "date_format": null
-        }
-      },
-      "applied_migrations": [
-        {
-          "id": 1,
-          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 2,
-          "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 3,
-          "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 4,
-          "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 5,
-          "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
-        }
-      ],
-      "filters": {},
-      "alternative_properties": null
-    },
-    {
-      "component_type": "core.Indicator",
-      "component_id": "471e2fea-af1c-4e92-bb0f-25f2f6c0e10b",
-      "namespace": "ppc",
-      "node_id": "logs_total_user_time",
-      "x": 10,
-      "y": 1,
-      "w": 2,
-      "h": 1,
-      "isDraggable": true,
-      "isResizable": true,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Total user time",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": "",
-          "translations": {}
-        },
-        "hide_header": null,
-        "hide_border": null,
-        "hide_maximize_button": true,
-        "hide_data_handling_icon": null,
-        "header_color": null,
-        "header_background_color": null,
-        "show_data_handling_area": false,
-        "pivot": {
-          "agg": {},
-          "params": {}
-        },
-        "shape": null,
-        "styles": {
-          "all": {
-            "style": {
-              "font-size": "20px",
-              "text-align": "center",
-              "font-weight": "bold"
-            },
-            "conditional_format": [],
-            "value_format": {
-              "type": "number",
-              "thousands_separator": true,
-              "decimal_places": 0,
-              "prefix": "",
-              "suffix": "",
-              "date_format": ""
-            }
-          },
-          "custom": []
-        },
-        "unlinked_indexes": [],
-        "processing_engine": "default",
-        "show_filter_toolbar": false,
-        "show_pivot_toolbar": false,
-        "value_format": {
-          "type": null,
-          "thousands_separator": false,
-          "decimal_places": null,
-          "prefix": "",
-          "suffix": "",
-          "date_format": null
-        }
-      },
-      "applied_migrations": [
-        {
-          "id": 1,
-          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 2,
-          "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 3,
-          "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 4,
-          "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
-        },
-        {
-          "id": 5,
-          "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:30:59"
         }
       ],
       "filters": {},
@@ -581,9 +440,9 @@
     },
     {
       "component_type": "core.Chart",
-      "component_id": "6c7bdb33-0e08-4a23-a13c-e7ebb43c1fac",
+      "component_id": "33402d00-0f47-4277-8234-f6b3ea170103",
       "namespace": "ppc",
-      "node_id": "logs_usage_by_user",
+      "node_id": "logs_user_calls_by_day",
       "x": 0,
       "y": 2,
       "w": 6,
@@ -597,7 +456,7 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Calls and sessions by day",
+          "text": "User calls by day",
           "custom_text": "",
           "show_units": true,
           "units_text": "",
@@ -612,12 +471,12 @@
         "show_data_handling_area": false,
         "chart_type": {
           "main_type": "column",
-          "subtype": "column_normal",
+          "subtype": "column_stacked",
           "plotly_import_source": "px",
           "plotly_code": "bar",
           "chart_params": {},
           "chart_layout": {
-            "barmode": "group"
+            "barmode": "stack"
           },
           "chart_update_traces": {}
         },
@@ -631,12 +490,12 @@
         "drilldown_event": true,
         "pivot": {
           "agg": {
-            "calls": "sum",
-            "total time": "sum"
+            "calls": "sum"
           },
           "params": {
             "y": "calls",
-            "x": "date"
+            "x": "date",
+            "color": "user"
           }
         },
         "page_size": {
@@ -647,7 +506,7 @@
         "drilldowns": [],
         "available_drilldown_indexes": [
           "session_key",
-          "total time"
+          "app_uri"
         ],
         "supported_types_for_drilldown": [
           "column",
@@ -681,7 +540,9 @@
             "combined_primary_axis_color": "",
             "combined_secondary_axis_color": "",
             "show_y_axis_title": true,
-            "show_x_axis_title": true
+            "show_x_axis_title": true,
+            "conditional_format": [],
+            "style": {}
           },
           "custom": []
         },
@@ -699,44 +560,33 @@
         },
         "sort": {},
         "unlinked_indexes": [],
-        "processing_engine": "default",
-        "show_filter_toolbar": false,
-        "show_pivot_toolbar": false,
-        "value_format": {
-          "type": null,
-          "thousands_separator": false,
-          "decimal_places": null,
-          "prefix": "",
-          "suffix": "",
-          "date_format": null
-        },
-        "type": null
+        "processing_engine": "default"
       },
       "applied_migrations": [
         {
           "id": 1,
           "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:32:01"
         },
         {
           "id": 2,
           "name": "Table__apply_heatmap_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:32:01"
         },
         {
           "id": 3,
           "name": "Chart__apply_remove_deprecated_properties_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:32:01"
         },
         {
           "id": 4,
           "name": "all__update_hide_maximize_button_property",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:32:01"
         },
         {
           "id": 5,
           "name": "Table_Chart_Indicator__apply_unlink_migration",
-          "date": "2025-01-03 16:09:46"
+          "date": "2025-01-03 16:32:01"
         }
       ],
       "filters": {},
@@ -745,7 +595,7 @@
         "custom_code": false,
         "title": {
           "enabled": true,
-          "text": "Calls and sessions by day",
+          "text": "User calls by day",
           "custom_text": "",
           "show_units": true,
           "units_text": "",
@@ -771,7 +621,9 @@
             "calls": "sum"
           },
           "params": {
-            "rows": [],
+            "rows": [
+              "user"
+            ],
             "columns": [
               "date"
             ],
@@ -821,11 +673,133 @@
         "show_column_filter_icon": false,
         "hide_footer": false,
         "unlinked_indexes": [],
+        "processing_engine": "default"
+      }
+    },
+    {
+      "component_type": "core.Table",
+      "component_id": "f6426dd0-f787-4a16-9e3a-73cd6e6d3a25",
+      "namespace": "ppc",
+      "node_id": "logs_top_15_active_users",
+      "x": 6,
+      "y": 2,
+      "w": 6,
+      "h": 9,
+      "isDraggable": true,
+      "isResizable": true,
+      "error_code": null,
+      "error_detail": null,
+      "properties": {
+        "code": null,
+        "custom_code": false,
+        "title": {
+          "enabled": true,
+          "text": "Top 15 active users",
+          "custom_text": "",
+          "show_units": true,
+          "units_text": "",
+          "translations": {}
+        },
+        "hide_header": null,
+        "hide_border": null,
+        "hide_maximize_button": false,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
+        "table_properties": {
+          "colHeaders": true,
+          "manualColumnResize": true,
+          "multiColumnSorting": true,
+          "rowHeaders": false
+        },
+        "calculated_fields": [],
+        "calculated_items": [],
+        "pivot": {
+          "agg": {
+            "calls": "sum"
+          },
+          "params": {
+            "rows": [],
+            "columns": [],
+            "measures": []
+          }
+        },
+        "page_size": {
+          "rows": 100,
+          "columns": 500
+        },
+        "sort": {},
+        "renderers": {},
+        "columns": {},
+        "right_total": false,
+        "right_total_position": "end",
+        "bottom_total": false,
+        "bottom_total_position": "end",
+        "hide_empty_data": "",
+        "drilldowns": [],
+        "styles": {
+          "all": {
+            "style": {},
+            "conditional_format": [],
+            "value_format": {
+              "type": "number",
+              "thousands_separator": true,
+              "decimal_places": 0,
+              "prefix": "",
+              "suffix": "",
+              "date_format": ""
+            }
+          },
+          "custom": []
+        },
+        "applied_hierarchies": {},
+        "scenarios": {
+          "compare": false,
+          "calculations": [
+            {
+              "calculation_type": "Values",
+              "end_text": ""
+            }
+          ]
+        },
+        "show_column_filter_icon": false,
+        "hide_footer": false,
+        "unlinked_indexes": [],
         "processing_engine": "default",
         "show_filter_toolbar": false,
-        "show_pivot_toolbar": false,
-        "unlink": []
-      }
+        "show_pivot_toolbar": false
+      },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2025-01-03 17:00:40"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2025-01-03 17:00:40"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2025-01-03 17:00:40"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2025-01-03 17:00:40"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2025-01-03 17:00:40"
+        }
+      ],
+      "alternative_properties": null,
+      "filters": {},
+      "cell_properties": null
     }
   ]
 }
