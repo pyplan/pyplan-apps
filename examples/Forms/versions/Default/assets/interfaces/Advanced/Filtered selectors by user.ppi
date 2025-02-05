@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Advanced",
+  "uri": "/data/models/pyplan/llascano/Forms para ejemplos/versions/Default/assets/interfaces/Advanced",
   "properties": {
     "id": "d61da4cd-7c71-47df-b23a-366bde8895d5",
     "name": "Filtered selectors by user",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {

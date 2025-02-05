@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Simple",
+  "uri": "/data/models/pyplan/llascano/Forms para ejemplos/versions/Default/assets/interfaces/Simple",
   "properties": {
     "id": "efcc6b55-4788-44f7-95c0-39954e79a226",
     "name": "Related selectors",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {
