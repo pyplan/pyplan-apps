@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Simple",
+  "uri": "/data/models/pyplan/llascano/Forms para ejemplos/versions/Default/assets/interfaces/Simple",
   "properties": {
     "id": "6a1a0ad7-2f34-4183-8a82-124146f061a3",
     "name": "Blocked columns",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {

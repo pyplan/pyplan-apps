@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces/Simple",
+  "uri": "/data/models/pyplan/llascano/Forms para ejemplos/versions/Default/assets/interfaces/Simple",
   "properties": {
     "id": "6e49c17b-c0dc-4ef8-b12b-3819afffd8fa",
     "name": "Basic selectors",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {

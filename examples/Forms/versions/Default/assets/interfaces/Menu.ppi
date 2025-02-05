@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/llascano/Examples/Forms/assets/interfaces",
+  "uri": "/data/models/pyplan/llascano/Forms para ejemplos/versions/Default/assets/interfaces",
   "properties": {
     "id": "444ef11c-fec3-4ec8-9297-2a7034ec48b2",
     "name": "Menu",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": null,
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {

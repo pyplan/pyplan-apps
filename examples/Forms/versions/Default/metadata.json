@@ -1,0 +1,21 @@
+{
+  "id": "539a6d34-ea88-41d5-a4a5-f07d71bf67e7",
+  "status": "active",
+  "labels": [],
+  "description": null,
+  "description_translations": null,
+  "versionDescription": null,
+  "customSeriesColors": [],
+  "defaultInterface": "444ef11c-fec3-4ec8-9297-2a7034ec48b2",
+  "defaultInterfaceByDepartment": [],
+  "creationDate": "2025-02-05 13:02:57",
+  "closingDate": "",
+  "archiveDate": "",
+  "creatorId": "pyplan",
+  "creatorFullName": "Pyplan",
+  "selectedScenarios": [],
+  "scenarioTemplates": [],
+  "quickMenu": "default",
+  "quickMenuInterfaceId": null,
+  "customDiscreteSequenceColorPalettes": []
+}
