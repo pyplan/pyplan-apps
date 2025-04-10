@@ -15,5 +15,7 @@
   "creatorFullName": "Pyplan",
   "selectedScenarios": [],
   "scenarioTemplates": [],
+  "quickMenu": "default",
+  "quickMenuInterfaceId": null,
   "customDiscreteSequenceColorPalettes": []
 }
