@@ -1,0 +1,21 @@
+{
+  "id": "53173d37-6d2a-43f5-8a35-2aee2a603f5c",
+  "appPath": "",
+  "version": "",
+  "description": "",
+  "alias": "",
+  "nodeIds": [],
+  "lastModifiedDate": "2026-03-10 14:00:46",
+  "creatorId": "bbca4aeb-787d-4d56-99a5-fc842d46de70",
+  "creatorFullName": "Fabian Brussa",
+  "creationDate": "2026-03-10 14:00:46",
+  "nodeIdsEvaluatedBeforehand": [],
+  "nodeIdsEvaluatedAfterwards": [],
+  "saveInputs": true,
+  "inputNodeIds": [],
+  "visibility": {
+    "type": "everyone",
+    "userName": null,
+    "departmentCodes": []
+  }
+}

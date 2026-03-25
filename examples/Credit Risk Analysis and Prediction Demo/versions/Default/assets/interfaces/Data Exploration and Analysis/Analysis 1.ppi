@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces/Data Exploration and Analysis",
+  "uri": "/data/models/pyplan/fabian/Prebuild - Credit Risk Analysis and Prediction/versions/Default/assets/interfaces/Data Exploration and Analysis",
   "properties": {
     "id": "92be1e59-bb35-4c82-a10c-4dbc97ec2877",
     "name": "Analysis 1",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": "\u201cAnalysis 1\u201d is an analysis dashboard focused on a single dataset node titled \u201cData (with new columns and loans),\u201d presenting the underlying data in a large table view alongside six chart visualizations derived from the same dataset. The layout places the table on the left and arranges the charts in a grid on the right (top, middle, and bottom rows), enabling users to inspect the enriched loan data at record level while simultaneously viewing multiple graphical perspectives of that same data.",
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {
