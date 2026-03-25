@@ -1,0 +1,46 @@
+{
+  "id": "fda6e5d9-3b5f-4610-bf34-11a6c903a7c8",
+  "status": "active",
+  "labels": [],
+  "description": null,
+  "description_translations": null,
+  "versionDescription": null,
+  "customSeriesColors": [
+    {
+      "id": "okj9vey2p1qtby92y44q2i",
+      "title": "Risk",
+      "values": [
+        {
+          "id": 1,
+          "text": "good",
+          "color": "#93C47D"
+        },
+        {
+          "id": 2,
+          "text": "bad",
+          "color": "#EA9999"
+        }
+      ]
+    }
+  ],
+  "defaultInterface": "448be3d7-aee9-4af9-aece-187d9b94537a",
+  "defaultInterfaceByDepartment": [],
+  "creationDate": "2026-03-10 14:00:46",
+  "closingDate": "",
+  "archiveDate": "",
+  "creatorId": "bbca4aeb-787d-4d56-99a5-fc842d46de70",
+  "creatorFullName": "Fabian Brussa",
+  "lastModifiedDate": "2026-03-18 13:20:02",
+  "lastModifiedByUserFullName": "Fabian Brussa",
+  "closedByUserFullName": "",
+  "archivedByUserFullName": "",
+  "selectedScenarios": [],
+  "interfaceScenarios": {},
+  "scenarioTemplates": [],
+  "quickMenu": "default",
+  "quickMenuInterfaceId": null,
+  "customDiscreteSequenceColorPalettes": [],
+  "sourceVersionId": null,
+  "sourceVersionName": null,
+  "defaultStyles": null
+}

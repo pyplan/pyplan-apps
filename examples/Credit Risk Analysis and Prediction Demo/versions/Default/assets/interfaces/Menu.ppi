@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces",
+  "uri": "/data/models/pyplan/fabian/Prebuild - Credit Risk Analysis and Prediction/versions/Default/assets/interfaces",
   "properties": {
     "id": "448be3d7-aee9-4af9-aece-187d9b94537a",
     "name": "Menu",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": "This interface is titled \u201cMenu\u201d and consists of a single full-width core.Menu component, indicating it is a navigation-focused screen intended to present a menu for accessing other parts of the application.",
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {

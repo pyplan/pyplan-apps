@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces/Machine Learning and Predictions",
+  "uri": "/data/models/pyplan/fabian/Prebuild - Credit Risk Analysis and Prediction/versions/Default/assets/interfaces/Machine Learning and Predictions",
   "properties": {
     "id": "1093167d-ac39-4f77-b0c0-b7beaa971675",
     "name": "New Loans Simulation",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": "The \u201cNew Loans Simulation\u201d interface is a single-screen dashboard centered on capturing or configuring inputs related to new loans: it contains one main component, a form titled \u201cNew Loans,\u201d which is intended to let the user enter and adjust new-loan parameters within the broader Credit Risk Analysis and Prediction application.",
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {
@@ -27,7 +32,9 @@
       "x": 0,
       "y": 0,
       "w": 12,
-      "h": 6,
+      "h": 10,
+      "isDraggable": true,
+      "isResizable": true,
       "error_code": null,
       "error_detail": null,
       "properties": {
@@ -38,18 +45,27 @@
           "text": "New Loans",
           "custom_text": "",
           "show_units": true,
-          "units_text": ""
+          "units_text": "",
+          "translations": {}
         },
         "hide_header": null,
         "hide_border": null,
+        "hide_maximize_button": false,
+        "hide_data_handling_icon": null,
+        "header_color": null,
+        "header_background_color": null,
+        "show_data_handling_area": false,
+        "show_quick_pivot_area": null,
+        "show_component_settings_icon": true,
         "table_properties": {
           "colHeaders": true,
           "manualColumnResize": true,
           "multiColumnSorting": true,
           "rowHeaders": false
         },
+        "show_index": null,
         "calculated_fields": [],
-        "unlink": [],
+        "calculated_items": [],
         "pivot": {
           "agg": {
             "age": "sum"
@@ -69,6 +85,8 @@
           "columns": 500
         },
         "sort": {},
+        "custom_sorts": {},
+        "multi_sort_order": null,
         "renderers": {},
         "columns": {
           "id": {
@@ -170,23 +188,37 @@
           }
         },
         "right_total": false,
+        "right_total_position": "end",
+        "right_total_aggregation_method": "sum",
         "bottom_total": false,
+        "bottom_total_position": "end",
+        "bottom_total_aggregation_method": "sum",
         "hide_empty_data": "",
-        "show_pivot_toolbar": false,
-        "show_filter_toolbar": false,
         "drilldowns": [],
         "styles": {
           "all": {
             "style": {},
             "conditional_format": [],
+            "progress_bar": null,
+            "numericFormat": null,
+            "prefix": null,
+            "suffix": null,
+            "dateRendererFormat": null,
+            "renderer": null,
+            "readOnly": null,
+            "shape": null,
             "value_format": {
               "type": "number",
               "thousands_separator": true,
               "decimal_places": 2,
               "prefix": "",
               "suffix": "",
-              "date_format": ""
-            }
+              "date_format": "",
+              "show_negative_numbers_in_parentheses": false
+            },
+            "heatmap": null,
+            "fixed_column_width": false,
+            "fixed_column_width_value": null
           },
           "custom": [
             {
@@ -206,14 +238,26 @@
               "cell_properties": {
                 "style": {},
                 "conditional_format": [],
+                "progress_bar": null,
+                "numericFormat": null,
+                "prefix": null,
+                "suffix": null,
+                "dateRendererFormat": null,
+                "renderer": null,
+                "readOnly": null,
+                "shape": null,
                 "value_format": {
                   "type": "number",
                   "thousands_separator": true,
                   "decimal_places": 0,
                   "prefix": "",
                   "suffix": "",
-                  "date_format": ""
-                }
+                  "date_format": "",
+                  "show_negative_numbers_in_parentheses": false
+                },
+                "heatmap": null,
+                "fixed_column_width": false,
+                "fixed_column_width_value": null
               }
             },
             {
@@ -236,8 +280,10 @@
                 },
                 "conditional_format": [
                   {
-                    "from_": 1.0,
-                    "to": 1.0,
+                    "condition_type": "range",
+                    "value1": 1.0,
+                    "value2": 1.0,
+                    "value_format": null,
                     "style": {
                       "text-align": "none"
                     },
@@ -248,11 +294,16 @@
                       },
                       "color": "#C00000",
                       "show_icon_only": true
-                    }
+                    },
+                    "numericFormat": null,
+                    "prefix": null,
+                    "suffix": null
                   },
                   {
-                    "from_": 0.0,
-                    "to": 0.0,
+                    "condition_type": "range",
+                    "value1": 0.0,
+                    "value2": 0.0,
+                    "value_format": null,
                     "style": {},
                     "shape": {
                       "icon": {
@@ -261,27 +312,50 @@
                       },
                       "color": "#00B050",
                       "show_icon_only": true
-                    }
+                    },
+                    "numericFormat": null,
+                    "prefix": null,
+                    "suffix": null
                   },
                   {
-                    "from_": -1.0,
-                    "to": -1.0,
+                    "condition_type": "range",
+                    "value1": -1.0,
+                    "value2": -1.0,
+                    "value_format": null,
                     "style": {},
                     "shape": {
                       "icon": {
                         "prefix": "fad",
                         "name": "fa-dash"
                       },
+                      "color": null,
                       "show_icon_only": true
-                    }
+                    },
+                    "numericFormat": null,
+                    "prefix": null,
+                    "suffix": null
                   }
                 ],
+                "progress_bar": null,
+                "numericFormat": null,
+                "prefix": null,
+                "suffix": null,
+                "dateRendererFormat": null,
+                "renderer": null,
+                "readOnly": null,
+                "shape": null,
                 "value_format": {
+                  "type": null,
                   "thousands_separator": false,
+                  "decimal_places": null,
                   "prefix": "",
                   "suffix": "",
-                  "date_format": ""
-                }
+                  "date_format": "",
+                  "show_negative_numbers_in_parentheses": false
+                },
+                "heatmap": null,
+                "fixed_column_width": false,
+                "fixed_column_width_value": null
               }
             },
             {
@@ -300,26 +374,44 @@
                 "style": {},
                 "conditional_format": [
                   {
-                    "from_": -1.0,
-                    "to": -1.0,
+                    "condition_type": "range",
+                    "value1": -1.0,
+                    "value2": -1.0,
+                    "value_format": null,
                     "style": {},
                     "shape": {
                       "icon": {
                         "prefix": "fad",
                         "name": "fa-dash"
                       },
+                      "color": null,
                       "show_icon_only": true
-                    }
+                    },
+                    "numericFormat": null,
+                    "prefix": null,
+                    "suffix": null
                   }
                 ],
+                "progress_bar": null,
+                "numericFormat": null,
+                "prefix": null,
+                "suffix": null,
+                "dateRendererFormat": null,
+                "renderer": null,
+                "readOnly": null,
+                "shape": null,
                 "value_format": {
                   "type": "number",
                   "thousands_separator": true,
                   "decimal_places": 0,
                   "prefix": "$ ",
                   "suffix": "",
-                  "date_format": ""
-                }
+                  "date_format": "",
+                  "show_negative_numbers_in_parentheses": false
+                },
+                "heatmap": null,
+                "fixed_column_width": false,
+                "fixed_column_width_value": null
               }
             },
             {
@@ -337,100 +429,111 @@
               "cell_properties": {
                 "style": {},
                 "conditional_format": [],
+                "progress_bar": null,
+                "numericFormat": null,
+                "prefix": null,
+                "suffix": null,
+                "dateRendererFormat": null,
+                "renderer": null,
+                "readOnly": null,
+                "shape": null,
                 "value_format": {
                   "type": "number",
                   "thousands_separator": true,
                   "decimal_places": 0,
                   "prefix": "$ ",
                   "suffix": "",
-                  "date_format": ""
-                }
+                  "date_format": "",
+                  "show_negative_numbers_in_parentheses": false
+                },
+                "heatmap": null,
+                "fixed_column_width": false,
+                "fixed_column_width_value": null
               }
             }
           ]
         },
         "applied_hierarchies": {},
+        "scenarios": {
+          "compare": false,
+          "calculations": [
+            {
+              "calculation_type": "Values",
+              "end_text": ""
+            }
+          ],
+          "placement": "columns"
+        },
+        "show_column_filter_icon": null,
+        "hide_footer": false,
+        "show_view_as_table_chart_icon": false,
+        "unlinked_indexes": [],
+        "processing_engine": "default",
+        "fixed_columns": null,
         "hide_id_column": true,
-        "n_rows_to_add": 1
+        "n_rows_to_add": 1,
+        "confirm_on_change": false,
+        "invalidate_outputs_on_change": true,
+        "invalidate_outputs_on_confirm": false,
+        "update_calc_columns_on_change": true,
+        "update_calc_columns_on_confirm": true,
+        "selector_max_options": 100,
+        "show_select_columns_icon": true,
+        "show_edit_excel_icon": true,
+        "selected_column_fields": [],
+        "show_pivot_toolbar": false,
+        "show_filter_toolbar": false
       },
+      "applied_migrations": [
+        {
+          "id": 1,
+          "name": "Table_Chart_Indicator__apply_pivot_agg_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 2,
+          "name": "Table__apply_heatmap_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 3,
+          "name": "Chart__apply_remove_deprecated_properties_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 4,
+          "name": "all__update_hide_maximize_button_property",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 5,
+          "name": "Table_Chart_Indicator__apply_unlink_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 6,
+          "name": "Table_Chart_Indicator__apply_applied_hierarchies_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 7,
+          "name": "Selector__apply_format_property_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 8,
+          "name": "Filter__apply_selector_format_property_migration",
+          "date": "2026-03-12 18:33:55"
+        },
+        {
+          "id": 9,
+          "name": "Table__cleanup_show_index_and_show_column_filter_icon",
+          "date": "2026-03-12 18:33:55"
+        }
+      ],
       "alternative_properties": null,
       "filters": {},
       "cell_properties": null
-    },
-    {
-      "component_type": "core.Button",
-      "component_id": "550543fd-84d6-41d7-8030-481761e14d39",
-      "namespace": "ppc",
-      "node_id": "add_new_loans_to_csv",
-      "x": 0,
-      "y": 6,
-      "w": 2,
-      "h": 1,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Add New Loans to CSV",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": ""
-        },
-        "hide_header": true,
-        "hide_border": true
-      }
-    },
-    {
-      "component_type": "core.Button",
-      "component_id": "8e2cf952-951a-4f56-919c-933c9cd4fbcf",
-      "namespace": "ppc",
-      "node_id": "a0f360031a45d404cbe36298eb640a3f7",
-      "x": 2,
-      "y": 6,
-      "w": 2,
-      "h": 1,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Delete New Loans From CSV",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": ""
-        },
-        "hide_header": true,
-        "hide_border": true
-      }
-    },
-    {
-      "component_type": "core.Button",
-      "component_id": "fbee7959-fe41-44d9-9a9a-114bb07a8a7b",
-      "namespace": "ppc",
-      "node_id": "a698a766ffafb4abc95849a9ba6c7f3ad",
-      "x": 4,
-      "y": 6,
-      "w": 2,
-      "h": 1,
-      "error_code": null,
-      "error_detail": null,
-      "properties": {
-        "code": null,
-        "custom_code": false,
-        "title": {
-          "enabled": true,
-          "text": "Reset New Loans Inputs",
-          "custom_text": "",
-          "show_units": true,
-          "units_text": ""
-        },
-        "hide_header": true,
-        "hide_border": true
-      }
     }
   ]
 }

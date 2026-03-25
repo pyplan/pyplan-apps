@@ -1,5 +1,5 @@
 {
-  "uri": "/data/models/pyplan/Public/Examples/Credit Risk Analysis and Prediction Demo/assets/interfaces/Machine Learning and Predictions",
+  "uri": "/data/models/pyplan/fabian/Prebuild - Credit Risk Analysis and Prediction/versions/Default/assets/interfaces/Machine Learning and Predictions",
   "properties": {
     "id": "68e3aff7-1473-43b3-abac-529c762c2715",
     "name": "Machine Learning Process and Results",
@@ -16,7 +16,12 @@
       },
       "rowHeight": 70
     },
-    "documentation": null
+    "documentation": "The \u201cMachine Learning Process and Results\u201d interface presents a side-by-side evaluation of three classification approaches\u2014Random Forest, Logistic Regression, and Gaussian Naive Bayes\u2014using a consistent set of performance outputs. For each method it displays key metric indicators (Accuracy, Precision Score, Recall, and ROC AUC), a confusion matrix table, and an interactive ROC curve chart (Plotly). In addition, it includes a Feature Importance table specifically for the Random Forest method, and uses HTML blocks at the top of each method\u2019s column to visually separate or label the sections.",
+    "source": "interface",
+    "translations": {
+      "name": {},
+      "documentation": {}
+    }
   },
   "definition": [
     {
