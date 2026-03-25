@@ -4,11 +4,41 @@
     "onOpenDashId": "3774",
     "onOpenModel": "openDashboard"
   },
+  "appDocumentation": null,
   "appProperties": {
     "id": "54c2d75f-09de-4609-b24b-f8b225438568",
-    "defaultInterface": "448be3d7-aee9-4af9-aece-187d9b94537a",
-    "defaultInterfaceByDepartment": [],
-    "description": null,
+    "defaultVersion": null,
+    "installLibrariesOnOpen": true,
+    "openDefaultVersionOnOpen": true,
+    "defaultTabOnOpen": "open_existing_version",
+    "applicationAssistantBots": [],
+    "applicationLanguage": "",
+    "pythonVersion": "3.12",
+    "instanceTimeoutInSeconds": null,
+    "engineResources": {
+      "metadata": {
+        "cpu_architecture": "arm"
+      },
+      "pod_definition": {
+        "spec": {
+          "nodeSelector": {
+            "env": "PyplanArmEngines"
+          }
+        }
+      },
+      "container_params": {
+        "resources": {
+          "limits": {
+            "cpu": "0.95",
+            "memory": "3.5Gi"
+          },
+          "requests": {
+            "cpu": "0.95",
+            "memory": "3.5Gi"
+          }
+        }
+      }
+    },
     "customSeriesColors": [
       {
         "id": "okj9vey2p1qtby92y44q2i",
@@ -26,6 +56,9 @@
           }
         ]
       }
-    ]
+    ],
+    "description": null,
+    "defaultInterfaceByDepartment": [],
+    "defaultInterface": "448be3d7-aee9-4af9-aece-187d9b94537a"
   }
 }
